@@ -1,0 +1,29 @@
+h1, note, table th {
+  color: /* Dark Beige */ rgb(63, 63, 31);
+}
+
+.fixed {
+  background-color: /* Subtle Beige */ rgb(255, 255, 237);
+}
+
+#footer {
+  border-color: /* Beige */ rgb(127, 127, 63);
+}
+
+#largequote {
+  border-top-color: /* Light Beige */ rgb(192, 192, 127);
+}
+
+#largequote .closeinfo {
+  color: /* Light Beige */ rgb(192, 192, 127);
+}
+
+table th {
+  background-color: /* Light Beige */ rgb(192, 192, 127);
+  border-left-color: /* Beige */ rgb(127, 127, 63);
+}
+
+table th.directions {
+  background-color: white;
+}
+

@@ -1,24 +1,19 @@
 /* Fantasque Sans Mono font */
 @import url("fantasque/stylesheet.css"); 
 
-/* Fontfaces */
-
 body {
   font-family: 'Fantasque Sans Mono', monospace;
   margin: 0px;
   text-align: center;
 }
 
-h1 {
-  color: /* Dark Beige */ rgb(63, 63, 31);
-}
+a { text-decoration: none; }
 
-em {
-  font-weight: bold;
-}
+em { font-weight: bold; }
+
+li { text-align: left; }
 
 note {
-  color: /* Dark Beige */ rgb(63, 63, 31);
   font-weight: bold;
   font-style: normal;
 }
@@ -36,13 +31,13 @@ place {
 
 .fixed {
   position: fixed;
-  background-color: /* Subtle Beige */ rgb(255, 255, 237);
+  background-color: #ffffff
 }
 
 #footer {
   bottom: 0px;
   max-width: 715px;
-  border: 5px solid /* Beige */ rgb(127, 127, 63);
+  border: 5px solid gray;
   border-top: 1px solid gray;
   border-right: none;
   height: 60px;
@@ -50,7 +45,6 @@ place {
 
 #largequote {
   height: 100%;
-  border-top: 5px solid /* Light Beige */ rgb(192, 192, 127);
   visibility: hidden;
   text-align: left;
 }
@@ -59,7 +53,6 @@ place {
   float: right;
   font-style: italic;
   font-size: 12px;
-  color: /* Light Beige */ rgb(192, 192, 127);
 }
 
 table {
@@ -73,9 +66,7 @@ table th {
   width: 90px;
   vertical-align: text-top;
   text-align: right;
-  background-color: /* Light Beige */ rgb(192, 192, 127);
-  color: /* Dark Beige */ rgb(63, 63, 31);
-  border-left: 5px solid /* Beige */ rgb(127, 127, 63);
+  border-left: 5px solid gray;
   padding-right: 5px;
 }
 
@@ -94,5 +85,4 @@ table td {
 
 table th.directions {
   text-align: right;
-  background-color: white;
   border-right: none;

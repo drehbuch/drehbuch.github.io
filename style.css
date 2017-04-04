@@ -28,7 +28,7 @@ place {
   font-variant: small-caps;
 }
 
-.content {
+.content, .footer, #largequote {
   display: inline-block;
   width: 90%;
   max-width: 720px;
@@ -46,7 +46,6 @@ place {
 }
 
 #largequote {
-  left: 0px;
   display: inline-block;
   position: fixed;
   height: 100%;

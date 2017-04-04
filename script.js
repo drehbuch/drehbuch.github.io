@@ -18,3 +18,12 @@ function quoteShow(quoteid) {
   height = 150 / Math.log(selectText.innerHTML.length / 5);
   largeText.style.fontSize = height + "px";
 }
+
+function switchStyle() {
+  var styler = document.getElementById('styler');
+  if( styler.href.endsWith('bright.css') ){
+    styler.href = 'dark.css';
+  } else {
+    styler.href = 'bright.css';
+  }
+}

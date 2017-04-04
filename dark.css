@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(41, 49, 52);
+  color: rgb(224, 226, 228);
+}
+
+h1, note, table th {
+  color: rgb(147, 199, 99);
+}
+
+a {
+  color: rgb(103, 140, 177);
+}
+
+.fixed, table th {
+  background-color: rgb(63, 75, 78);
+}
+
+#largequote {
+  border-top-color: rgb(192, 127, 127);
+}
+
+#largequote .closeinfo {
+  color: rgb(192, 127, 127);
+}

@@ -34,6 +34,11 @@ place {
   background-color: #ffffff
 }
 
+#header {
+  top: 0px;
+  border-top: 5px solid gray;
+}
+
 #footer {
   box-sizing: border-box;
   bottom: 0px;
@@ -46,6 +51,7 @@ place {
   height: 100%;
   visibility: hidden;
   text-align: left;
+  border-top: 5px solid gray;
 }
 
 #largequote .closeinfo {

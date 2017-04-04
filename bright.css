@@ -6,12 +6,12 @@ h1, note, table th {
   background-color: /* Subtle Beige */ rgb(255, 255, 237);
 }
 
-#footer {
+#footer, #header {
   border-color: /* Beige */ rgb(127, 127, 63);
 }
 
 #largequote {
-  border-top-color: /* Light Beige */ rgb(192, 192, 127);
+  border-color: /* Light Beige */ rgb(192, 192, 127);
 }
 
 #largequote .closeinfo {

@@ -35,7 +35,6 @@ place {
 }
 
 .footer {
-  left: 0px;
   position: fixed;
   bottom: 0px;
   max-width: 715px;
@@ -46,7 +45,8 @@ place {
   height: 60px;
 }
 
-#largequote {  
+#largequote {
+  left: 0px;
   display: inline-block;
   position: fixed;
   height: 100%;
@@ -108,4 +108,3 @@ table th.directions {
   text-align: right;
   background-color: white;
   border-right: none;
-}

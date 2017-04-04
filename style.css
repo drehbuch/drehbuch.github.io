@@ -28,18 +28,18 @@ place {
   font-variant: small-caps;
 }
 
-.content, .footer, #largequote {
+.fixed, .content {
   display: inline-block;
   width: 90%;
   max-width: 720px;
 }
 
-.footer, #largequote {
+.fixed {
   position: fixed;
   background-color: /* Subtle Beige */ rgb(255, 255, 237);
 }
 
-.footer {
+#footer {
   bottom: 0px;
   max-width: 715px;
   border: 5px solid /* Beige */ rgb(127, 127, 63);

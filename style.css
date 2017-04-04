@@ -1,0 +1,110 @@
+/* Fantasque Sans Mono font */
+@import url("fantasque/stylesheet.css"); 
+
+/* Fontfaces */
+
+body {
+  font-family: 'Fantasque Sans Mono', monospace;
+  margin: 0px;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+em {
+  font-weight: bold;
+}
+
+note {
+  color: /* Dark Beige */ rgb(63, 63, 31);
+  font-weight: bold;
+  font-style: normal;
+}
+
+place {
+  font-family: 'Cambria', serif;
+  font-variant: small-caps;
+}
+
+.content {
+  display: inline-block;
+  width: 90%;
+  max-width: 720px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  max-width: 715px;
+  border: 5px solid /* Beige */ rgb(127, 127, 63);
+  border-top: 1px solid gray;
+  border-right: none;
+  background-color: /* Subtle Beige */ rgb(255, 255, 237);
+  height: 60px;
+}
+
+#largequote {  
+  display: inline-block;
+  position: fixed;
+  height: 100%;
+  width: 90%;
+  max-width: 720px;
+  border-top: 5px solid /* Light Beige */ rgb(192, 192, 127);
+  background-color: /* Subtle Beige */ rgb(255, 255, 237);
+  visibility: hidden;
+  opacity: 1.0;
+}
+
+#largequote h1 {
+  text-align: left;
+  color: /* Dark Beige */ rgb(63, 63, 31);
+}
+
+#largequote p {
+  text-align: left;
+}
+
+#largequote h2 {
+  float: right;
+  font-style: italic;
+  font-size: 12px;
+  color: /* Light Beige */ rgb(192, 192, 127);
+}
+
+table {
+  font-style: italic;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid gray;
+}
+
+table th {
+  width: 90px;
+  vertical-align: text-top;
+  text-align: right;
+  background-color: /* Light Beige */ rgb(192, 192, 127);
+  color: /* Dark Beige */ rgb(63, 63, 31);
+  border-left: 5px solid /* Beige */ rgb(127, 127, 63);
+  padding-right: 5px;
+}
+
+table td {
+  text-align: justify;
+  border: 1px dotted gray;
+  border-left: 3px double gray;
+  padding-left: 5px;
+}
+
+@media all and (max-width: 400px){
+  table td{
+    text-align: left;
+  }
+}
+
+table th.directions {
+  text-align: right;
+  background-color: white;
+  border-right: none;
+}

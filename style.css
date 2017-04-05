@@ -28,6 +28,7 @@ place {
 }
 
 .fixed {
+  margin: 0 auto;
   position: fixed;
   background-color: #ffffff
 }

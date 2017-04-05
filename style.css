@@ -28,6 +28,8 @@ place {
 }
 
 .fixed {
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
   position: fixed;
@@ -48,6 +50,7 @@ place {
 }
 
 #largequote {
+  top: 0px;
   height: 100%;
   visibility: hidden;
   text-align: left;

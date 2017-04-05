@@ -7,9 +7,11 @@ h1, note, table th {
   color: rgb(147, 199, 99);
 }
 
-a {
-  color: rgb(103, 140, 177);
-}
+a { color: rgb(103, 140, 177); }
+
+a:visited { color: rgb(160, 130, 189); }
+
+a:active { color: rgb(213, 171, 85); }
 
 .fixed, table th {
   background-color: rgb(63, 75, 78);

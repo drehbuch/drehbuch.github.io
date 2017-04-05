@@ -21,7 +21,7 @@ place {
   font-variant: small-caps;
 }
 
-.fixed, .content {
+.content {
   display: inline-block;
   width: 90%;
   max-width: 720px;

@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Fantasque Sans Mono', monospace;
-  margin: auto;
+  margin: 0px;
   text-align: center;
 }
 
@@ -28,7 +28,6 @@ place {
 }
 
 .fixed {
-  display: inline;
   position: fixed;
   background-color: #ffffff
 }

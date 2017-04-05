@@ -9,7 +9,7 @@ body {
 
 a { text-decoration: none; }
 
-a:hover, th:not(.directions):hover { text-decoration: underline; }
+a:hover, th:not(.directions):hover , .clickable:hover { text-decoration: underline; }
 
 li { text-align: left; }
 

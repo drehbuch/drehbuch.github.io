@@ -21,13 +21,14 @@ place {
   font-variant: small-caps;
 }
 
-.content {
+.content, .fixed {
   display: inline-block;
   width: 90%;
   max-width: 720px;
 }
 
 .fixed {
+  display: inline;
   position: fixed;
   background-color: #ffffff
 }

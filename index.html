@@ -7,22 +7,8 @@
   <link id="styler" rel="stylesheet" href="bright.css"/>
   <script src="script.js"></script>
 </head>
-<body>
+<body onload='load()'>
   <div class='content'>
-    <div class='fixed' id='header'></div>
-    <div class='fixed' id='footer'>
-      <p>
-        <a href="#section1">Hohenschönhausen</a> / 
-        <a href="#section2">Ins Theater</a> / 
-        <a href="#section3">Anzapfung</a> / 
-        <a href="#section4">Korruption</a> / 
-        <a href="#section5">Veränderung</a> / 
-        <a href="#section6">Selbstmord</a> / 
-        <a href="#section7">„Von einem, der rüber machte“</a> / 
-        <a href="#section8">Die Wiedervereinigung</a>
-      </p>
-    </div>
-    
     <div class='fixed' id='largequote' onclick='quoteHide();'>
       <h2 class='closeinfo'>(Click anywhere to close)</h2>
       <h1>[Speaker]</h1>
@@ -40,6 +26,24 @@
       <li>Use Ctrl-F / ⌘F / your mobile browser's <i>'find…'</i> function to find a quote.</li>
       <li>Click the title to switch colour mode.</li>
     </ul>
+    
+    <h2>Table of Contents</h2>
+    
+    <div>
+      <div id='contents'>
+        <p>
+          <a href="#section1">Hohenschönhausen</a> / 
+          <a href="#section2">Ins Theater</a> / 
+          <a href="#section3">Anzapfung</a> / 
+          <a href="#section4">Korruption</a> / 
+          <a href="#section5">Veränderung</a> / 
+          <a href="#section6">Selbstmord</a> / 
+          <a href="#section7">„Von einem, der rüber machte“</a> / 
+          <a href="#section8">Die Wiedervereinigung</a>
+        </p>
+      </div>
+    </div>
+    
     <h2 id="section1">
       <a href="#section1">¶</a>
       Hohenschönhausen

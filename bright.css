@@ -6,7 +6,7 @@ h1, note, table th {
   background-color: /* Subtle Beige */ rgb(255, 255, 237);
 }
 
-#footer, #header {
+#contents.fixed {
   border-color: /* Beige */ rgb(127, 127, 63);
 }
 

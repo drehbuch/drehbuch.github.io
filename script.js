@@ -1,3 +1,19 @@
+String.prototype.endsWith = function(suffix) {
+    return this.indexOf(suffix, this.length - suffix.length) !== -1;
+};
+
+var nav, navTop;
+
+function load() {
+  nav = document.getElementById('contents');
+  navTop = nav.offsetTop;
+}
+
+document.onscroll = function() {
+  window.pageYOffset > navTop ?
+    nav.classList.add('fixed') : nav.classList.remove('fixed')
+}
+
 function quoteHide() {
   document.getElementById('largequote').style.visibility = 'hidden';
 }

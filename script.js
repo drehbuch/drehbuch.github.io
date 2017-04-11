@@ -2,17 +2,14 @@ String.prototype.endsWith = function(suffix) {
     return this.indexOf(suffix, this.length - suffix.length) !== -1;
 };
 
-var nav, navTop;
-
-function load() {
-  nav = document.getElementById('contents');
-  navTop = nav.offsetTop;
-}
-
-document.onscroll = function() {
-  window.pageYOffset > navTop ?
+fixNavigator = function() {
+  var nav = document.getElementById('contents');
+  var container = document.getElementById('container');
+  window.pageYOffset > container.offsetTop ?
     nav.classList.add('fixed') : nav.classList.remove('fixed')
 }
+
+document.onscroll = window.onresize = fixNavigator;
 
 function quoteHide() {
   document.getElementById('largequote').style.visibility = 'hidden';

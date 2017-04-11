@@ -40,7 +40,11 @@ place {
   margin-left: auto;
   margin-right: auto;
   position: fixed;
-  background-color: #ffffff
+  background-color: #ffffff;
+}
+
+#container {
+  height: 60px;
 }
 
 #contents {
@@ -51,7 +55,6 @@ place {
   border-bottom: 1px solid transparent;
   border-right: none;
 }
-
 
 #contents.fixed {
   border-color: gray;
@@ -94,12 +97,17 @@ table td {
   padding-left: 5px;
 }
 
-@media all and (max-width: 400px){
-  table td{
-    text-align: left;
-  }
-}
-
 table th.directions {
   text-align: right;
   border-right: none;
+}
+
+@media all and (max-width: 480px){
+  table td{
+    text-align: left;
+  }
+  
+  #container {
+    height: 100px;
+  }
+}

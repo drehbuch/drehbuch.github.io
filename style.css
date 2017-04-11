@@ -18,6 +18,11 @@ note {
   font-style: normal;
 }
 
+p.small {
+  font-style: italic;
+  font-size: 10px;
+}
+
 place {
   font-family: 'Cambria', serif;
   font-variant: small-caps;

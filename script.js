@@ -15,8 +15,7 @@ function quoteHide() {
   document.getElementById('largequote').style.visibility = 'hidden';
 }
 
-function quoteShow(quoteid) {
-  var selectSpeaker = document.getElementById(quoteid);
+function quoteShow(selectSpeaker) {
   var selectText = selectSpeaker.parentElement.getElementsByTagName("td")[0];
   
   var large = document.getElementById('largequote')

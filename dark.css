@@ -13,7 +13,12 @@ a:visited { color: rgb(160, 130, 189); }
 
 a:active { color: rgb(213, 171, 85); }
 
-.fixed, table th {
+#background {
+  border-color: gray;
+  background-color: rgb(63, 75, 78);
+}
+
+table th, #largequote {
   background-color: rgb(63, 75, 78);
 }
 

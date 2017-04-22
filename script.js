@@ -2,14 +2,31 @@ String.prototype.endsWith = function(suffix) {
     return this.indexOf(suffix, this.length - suffix.length) !== -1;
 };
 
-fixNavigator = function() {
-  var nav = document.getElementById('contents');
-  var container = document.getElementById('container');
-  window.pageYOffset > container.offsetTop ?
-    nav.classList.add('fixed') : nav.classList.remove('fixed')
+HTMLElement.prototype.classCondition = function(classname, condition){
+  condition ? this.classList.add(classname) : this.classList.remove(classname);
+};
+
+onScroll = function() {
+  var nav = document.getElementById('contents'),
+      background = document.getElementById('background'),
+      offset = document.getElementById('container').offsetTop - window.pageYOffset;
+  
+  nav.classCondition('fixed', offset < 0);
+  
+  /* Background appearance transition */
+  
+  var translucencyLimit = 150;
+  
+  if( offset > translucencyLimit ){
+    background.style.opacity = 0;
+  } else if( offset < 0 ){
+    background.style.opacity = 1;
+  } else {
+    background.style.opacity = 1 - (offset / translucencyLimit);
+  }
 }
 
-document.onscroll = window.onresize = fixNavigator;
+document.onscroll = window.onresize = onScroll;
 
 function quoteHide() {
   document.getElementById('largequote').style.visibility = 'hidden';

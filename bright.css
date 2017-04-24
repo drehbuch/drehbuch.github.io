@@ -2,18 +2,13 @@ h1, note, table th {
   color: /* Dark Beige */ rgb(63, 63, 31);
 }
 
-.fixed {
+#background, #largequote {
   background-color: /* Subtle Beige */ rgb(255, 255, 237);
 }
 
-#background {
-  background-color: /* Subtle Beige */ rgb(255, 255, 237);
-  border-color: /* Beige */ rgb(127, 127, 63);
-}
+#background { border-color: /* Beige */ rgb(127, 127, 63); }
 
-#largequote {
-  border-color: /* Light Beige */ rgb(192, 192, 127);
-}
+#largequote { border-color: /* Light Beige */ rgb(192, 192, 127); }
 
 #largequote .closeinfo {
   color: /* Light Beige */ rgb(192, 192, 127);

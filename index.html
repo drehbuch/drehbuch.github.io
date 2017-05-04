@@ -3,12 +3,15 @@
 <head>
   <title>Das Leben der anderen Drehbuch</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <script src="script.js"></script>
   
   <link rel="stylesheet" href="display.css"/>
   <link rel="stylesheet" href="interface.css"/>
   <link rel="stylesheet" href="viewsize.css"/>
   <link rel="stylesheet" id="styler" href="bright.css"/>
+  
+  <script src="interface.js"></script>
+  <script src="quote.js"></script>
+  
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
@@ -20,12 +23,13 @@
 </head>
 <body>
   <div class='content'>
-    <div class='fixed' id='largequote' onclick='quoteHide();'>
+    <div class='fixed' id='largeQuote' onclick='largeQuoteHide();'>
       <h2 class='closeinfo'>(Click anywhere to close)</h2>
-      <h1>[Speaker]</h1>
-      <p>[Quote]</p>
+      <h1>It appears the website has not loaded CSS.</h1>
+      <p>Please contact the website maintainer.</p>
     </div>
   </div>
+  
   <div class='content'>
     <h1 class='clickable' onclick='switchStyle()'><i>„Das Leben der anderen“</i> Drehbuch</h1>
     
@@ -59,7 +63,7 @@
           <a href="#section5">Veränderung</a> / 
           <a href="#section6">Selbstmord</a> / 
           <a href="#section7">„Von einem, der rüber machte“</a> / 
-          <a href="#section8">Die Wiedervereinigung</a>
+          <a href="#section8">Die Wiederereinigung</a>
         </p>
       </div>
     </div>
@@ -74,7 +78,7 @@
         <th colspan=2 class="directions"><place>Hohenschönhausen.</place> Einer roten Licht schaltet ein.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wachmann</th>
+        <th onclick="quoteClick(this)">Wachmann</th>
         <td>
           Stehen bleiben! Blick nach unten!
           <br/> Weitergehen!
@@ -82,7 +86,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Herein!
           <br/> Setzen Sie sich. Hände unter die Schenkel, Flächen nach unten.
@@ -90,57 +94,57 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Ich hab' nichts getan. Ich weiß nichts.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sie haben nichts getan, wissen nichts?
           <br/> Sie glauben also, dass wir unbescholtene Bürger einfach so einsperren… aus einer Laune heraus?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Nein, ich…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Wenn Sie unserem humanistischem System so etwas zutrauen, dann hätten wir schon Recht Sie zu verhaften, auch wenn sonst gar nichts wäre. Wir wollen ihrem Gedächtnis ein wenig nachhelfen, Häftling 227.
           <br/> Ihr Freund und Nachbar, ein gewisser Pirmasens Dieter hat am 28. September Republikflucht begangen und wir haben Grund zu der Annahme, dass ihm geholfen wurde.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Ich weiß darüber gar nichts. Er hat mir nicht mal gesagt, dass er rüber wollte. Ich hab's erst im Betrieb erfahren.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Beschreiben Sie mir doch bitte einmal, was Sie an diesem 28. September gemacht haben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Das hab' ich doch schon zu Protokoll gegeben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Bitte noch einmal.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Ich war mit meinen Kindern im Treptower Park spazieren. Dort traf ich meinen alten Schulfreund Max Kirchner. Wir gingen zusammen zu ihm nach Hause und haben bis in die späten Abendstunden Musik gehört.
           <br/> Er hat ein Telefon, Sie können ihn anrufen. Er wird ihnen das alles bestätigen. Ich kann Ihnen gern die Nummer geben.
@@ -150,7 +154,7 @@
         <th colspan=2 class="directions"><place>Stasi Hochschule Potsdam-Eiche</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Die Gegner unseres Staates sind arrogant. Merken Sie sich das.
           <br/> Wir müssen Geduld haben mit ihnen. Etwa 40 Stunden Geduld.
@@ -161,26 +165,26 @@
         <th colspan=2 class="directions"><place>Hohenschönhausen</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Ich möchte schlafen… bitte lassen Sie mich schlafen…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Die Hände unter die Schenkel.
           <br/> Schildern Sie mir noch einmal wie Sie den 28. September verbracht haben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Bitte… ich will nur eine Stunde… nur ein bisschen… nur ein bisschen schlafen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sagen Sie mir noch einmal, was Sie an diesem Tag gemacht haben.
         </td>
@@ -189,7 +193,7 @@
         <th colspan=2 class="directions">Häftling weint. <place>Stasischule</place>:</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schüler</th>
+        <th onclick="quoteClick(this)">Schüler</th>
         <td>
           Warum müssen Sie Ihn so lange wach halten?
           <br/> Ich meine… das ist doch unmenschlich.
@@ -199,7 +203,7 @@
         <th colspan=2 class="directions">Wiesler schreibt ein Zeichen unter der Name des Schülers.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ein unschuldiger Häftling wird mit jeder Stunde, die man ihn länger da behält, zorniger, wegen der Ungerechtigkeit, die ihm widerfährt. Er schreit… und tobt.
           <br/> Ein Schuldiger wird mit den Stunden ruhiger… und schweigt… oder weint. Er weiß, dass er zurecht dort sitzt.
@@ -207,25 +211,25 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Schulfreund Max Kirchner. Wir sind zu ihm nach Hause gegangen… und haben Musik gehört bis in die späten Abendstunden. Er hat ein Telefon, Sie können ihn Anrufen. Er wird das alles bestätigen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Fällt Ihnen etwas auf an seiner Aussage?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schüler</th>
+        <th onclick="quoteClick(this)">Schüler</th>
         <td>
           Er sagt das gleiche wie am Anfang.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Er sagt das <b>selbe</b> wie am Anfang. Wort für Wort.
           <br/> Wer die Wahrheit sagt, kann beliebig umformulieren… und tut das auch. Ein Lügner hat sich genaue Sätze zurechtgelegt, auf die er bei großer Anspannung zurückfällt.
@@ -236,32 +240,32 @@
         <th colspan=2 class="directions"><place>Hohenschönhausen</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Wenn Sie uns den Namen des Fluchthelfers nicht nennen, muss ich noch heute Nacht Ihre Frau verhaften lassen. Jana und Nadja kommen in eine staatliche Erziehungsanstalt. Wollen Sie das?
           <br/> Wie heißt der Fluchthelfer? Wer war es?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Gleske.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Nochmal, deutlicher!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Häftling</th>
+        <th onclick="quoteClick(this)">Häftling</th>
         <td>
           Gleske, Werner Gleske.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Werner… Gleske.
         </td>
@@ -270,7 +274,7 @@
         <th colspan=2 class="directions"><place>Stasi Hochschule</place>. Gemurmel.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ruhe. Ruhe! Hören Sie.
           <br/> Kann mir jemand sagen, was das ist? Die Geruchskonserver für die Hunde. Sie ist bei jedem Gespräch mit Untersuchungshäftlingen abzunehmen… und nie zu vergessen.
@@ -281,7 +285,7 @@
         <th colspan=2 class="directions">Klatschen</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Das war gut, das war richtig gut!
           <br/> Erinnerst du dich noch wie wir hier zusammen saßen vor 20 Jahren? Weißt du, dass Sie mir eine Professur angetragen haben?
@@ -289,26 +293,26 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td> 
           Was steht an?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Warum glaubst du eigentlich immer, dass ich mit einem Hintergedanken zu dir komme?
           <br/> Ich wollte dich nur ins Theater einladen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ins Theater?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Ich habe gehört, dass Minister Bruno Hempf heute Abend ins Theater geht. Da sollte ich als Leiter der Abteilung für Kultur Präsenz zeigen.
           <br/> Es geht um 19 Uhr los. Wir sollten gleich aufbrechen.
@@ -326,20 +330,20 @@
     
     <table>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Bruno Hempf auf 1 Uhr, Parkett. Du weißt, dass er beim MfS war… bevor Sie ihn in die Kulturabteilung des ZK holten? Hat ziemlich aufgeräumt in der Theaterszene damals.
           <br/> Georg Dreyman, der Dichter.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Das ist genau der arrogante Typ, vor dem ich meine Studenten immer warne.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Arrogant, aber linientreu. Ich mein', wenn alle so wären wie der, wär' ich arbeitslos. Das ist so ziemlich unser einziger Autor, der nichts Verdächtiges schreibt und den man trotzdem im Westen liest.
           <br/> Für ihn ist die DDR das schönste Land der Welt.
@@ -347,26 +351,26 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schauspielerin</th>
+        <th onclick="quoteClick(this)">Schauspielerin</th>
         <td>
           Mein Liebes Kind was hast du? Ein neues Gesicht?
           <br/> Sprich Martha, bitte sprich!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Martha</th>
+        <th onclick="quoteClick(this)">Martha</th>
         <td>
           Dein Arthur… lebt nicht mehr.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schauspielerin</th>
+        <th onclick="quoteClick(this)">Schauspielerin</th>
         <td>
           Arthur? Kannst du dich das eine Mal nicht irren?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Martha</th>
+        <th onclick="quoteClick(this)">Martha</th>
         <td>
           Nein, Schwester, glaube mir. Er ist gestürzt… in seinen Tod. Das große starke Rad hat ihn zermahlen.
           <br/> Ich sehe es… und würd' doch jeden Schrecken lieber sehen. Warum bleibt mir dies Sehen nicht erspart?
@@ -376,32 +380,32 @@
         <th colspan=2 class="directions">Wieslers Thema. Applaus vom Publikum.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Und wie hat's dir gefallen?
           <br/> Guter Mann der Dreyman, was?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ich würde ihn überwachen lassen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Überwachen? Das Unterrichten verdirbt deinen Instinkt, Wiesler.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Die Überwachung würde ich sogar selbst übernehmen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Aber ich sage dir doch, der ist sauberer als sauber… sogar Hempf kommt zu seiner Premiere. Wenn man so einen überwacht, dann schneidet man sich ins eigene Fleisch.
           <br/> Ich geh kurz hinunter.
@@ -411,43 +415,43 @@
         <th colspan=2 class="directions">Wieslers Thema. Er sieht Dreyman mit Sieland. Zwischen Hempf und Grubitz:</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Ich höre viel über Ihre Arbeit. Die Kultur ist in guten Händen, sagt man. Ja, ihr Name fällt oft in der Partei.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Wir sind Schild und Schwert der Partei, Herr Genosse Minister. Das ist mir zu jedem Augenblick bewusst.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Was halten Sie von Ihm?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Georg Dreyman? Vielleicht ehm…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Vielleicht was?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Vielleicht ist er nicht so… so sauber wie's scheint?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           <note>[Lacht]</note> Grubitz, deshalb sind Männer wie Sie und ich an der Spitze. Ein normaler Stasitrottel hätte jetzt gesagt: "Einer der Besten unseres Landes, linientreu…" und den ganzen Käse… aber wir sehen mehr.
           <br/> Sie werden's ganz nach oben schaffen, Grubitz.
@@ -455,7 +459,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Nächste Woche Donnerstag ist bei Dreyman eine Feier, da kommen einige dubiose Leute, Hauser und das ganze Gesocks. Versuchen Sie bis dahin was aufzubauen. Diskrete Überwachung. Maßnahmen, A und B.
           <br/> Nur in seinen Räumen. Nichts auffälliges, er hat mächtige Freunde. Es darf niemand was von der Überwachung mitbekommen… bis wir 'was gefunden haben.
@@ -463,7 +467,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Genosse Minister, einen schönen Abend.
         </td>
@@ -472,81 +476,81 @@
         <th colspan=2 class="directions">Jazzmusik bei Party.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Warum schaut der uns immer so an? Was macht der überhaupt hier? Ich glaube, er hat einen Narren an dir gefressen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Ich kann es mir nicht nehmen lassen heute Abend… noch auf das Wohl unserer Kulturschaffenden zu trinken.
           <br/> Ein großer Sozialist, ich weiß nicht mehr genau wer, hat einmal gesagt: "Der Dichter ist der Ingenieur der Seele". Und Georg Dreyman ist einer der bedeutendsten Ingenieure unseres Landes.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Reizend, deine Bettgenossen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Paul, was soll das?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Und natürlich Christa-Maria Sieland, sie ist die schönste Perle der Deutschen Demokratischen Republik da dulde ich keinen Widerspruch. Also erheben wir alle unsere Gläser auf Christa-Maria Sieland. Sie lebe hoch, hoch, hoch!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Dass so jemand überhaupt das Wort an dich richten darf…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Bleib bei mir, bitte.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Saxophonist</th>
+        <th onclick="quoteClick(this)">Saxophonist</th>
         <td>
           Und jetzt wieder etwas für's Gemüt.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Ich darf doch? <note>[Dreyman nickt nicht. Hempf küsst Sielands Backen.]</note>
           <br/> Wie hat ihnen denn meine kleine Rede gefallen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Vielen Dank.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Ihr Stück hat mir auch gut gefallen. Nein wirklich, war gut.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           "Ingenieur der Seele" – das war Stalin, den Sie zitiert haben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Ah ja? Tja, ich provoziere eben auch mal gern, Hauser.
           <br/> Aber anders als Sie, weiß ich genau wie weit ich dabei gehen darf.
@@ -554,43 +558,43 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Also wenn ihr nur über Politik reden wollt, dann muss ich mir jemand anders zum tanzen suchen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Na ich bin bereit!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Zu spät, zu spät! <note>[Sie geht.]</note>
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Wissen Sie, ich verfolge ja die Entwicklung unseres Theaters schon seit langem.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Ja, früher haben Sie sie ja beruflich verfolgt, nicht?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Paul!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Ist schon in Ordnung, Dreyman, Herr Hauser und ich, wir kennen uns schon viele Jahre.
           <br/> Herr Schwalber! Auch sie haben heute Abend ganze Arbeit geleistet.
@@ -598,33 +602,33 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Sie sprechen von Jerska?
           <br/> Ich bin ja der Meinung, dass Sie ihn zu hart beurteilen. Sicher, er hat mit seinen Äußerungen über die Stränge geschlagen. Keine Frage… Aber… versetzen Sie sich doch für einen Moment in seine Lage. Sie als Ehrenmann. Er kann seine Unterschrift von dieser Erklärung nicht zurückziehen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Genosse Hempf, der Mann könnte im Westen in jedem Theater arbeiten. Aber er will hier nicht weg… weil er fest an den Sozialismus glaubt… und an dieses Land. Sein Berufsverbot ist absolut…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Wer redet denn von Berufsverbot? So 'was gibt's doch gar nicht bei uns. Sie sollten vorsichtiger sein in Ihrer Wortwahl.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Genosse Hempf, das sage ich jetzt nur Ihnen. Meine Stücke sind nicht so gut, als dass ein Schwalber Sie inszenieren könnte. Ich brauche Jerska.
           <br/> Und ich glaube, dass Sie ihn zu hart beurteilen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Ja, sehen Sie, und ich glaube das nicht.
           <br/> Aber das lieben wir ja auch alle an Ihren Stücken. Die Liebe zum Menschen, die guten Menschen. Den Glauben, dass man sich verändern kann.
@@ -633,13 +637,13 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Er ist voller Hoffnung, dass sein Berufs— dass er bald wieder arbeiten darf. Darf er hoffen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Natürlich darf er hoffen, so lange er lebt. Und sogar noch länger… denn Sie wissen ja, Dreyman, die Hoffnung stirbt immer zuletzt. <note>[lacht]</note>
         </td>
@@ -656,13 +660,13 @@
         <th colspan=2 class="directions">Grubitz fahrt mit dem Auto mit Wiesler.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Der OTS steht ab morgen früh auf dein Zeichen für die Verwanzung bereit. Wichtig ist nur, dass bis Donnerstag alles steht. Ansonsten hast du Feierabend. Kriegst du das hin?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Gute Nacht.
         </td>
@@ -671,7 +675,7 @@
         <th colspan=2 class="directions"><place>Wieslers Wohnung</place>. Wieslers Thema, aber langsamer.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Fernseher</th>
+        <th onclick="quoteClick(this)">Fernseher</th>
         <td>
           …und später Flächen für die Kleinviehhalter an. Dort allerdings mit bestem Nutzen.
           <br/> Die ökonomische Strategie des 10. Parteitages bewährt sich im Leben. Dass jetzt erst recht alles zur--
@@ -681,25 +685,25 @@
         <th colspan=2 class="directions">An der Straße. Dreyman spielt Fußball mit Kinder. Wieslers Thema beginnt noch.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich muss nach oben, sonst krieg' ich Ärger.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Kind</th>
+        <th onclick="quoteClick(this)">Kind</th>
         <td>
           Von wem?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Von meiner Freundin.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Kind</th>
+        <th onclick="quoteClick(this)">Kind</th>
         <td>
           Na gut.
         </td>
@@ -708,31 +712,31 @@
         <th colspan=2 class="directions">Dramatische musik beginnt während Wiesler mit Stasiarbeiter beginnt, Dreymans Wohnung zu anzapfen.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Zwanzig Minuten. <note>[Er sieht Frau Meineke.]</note>
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Meineke</th>
+        <th onclick="quoteClick(this)">Meineke</th>
         <td>
           Ja?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Frau Meineke, ein Wort zu irgendwem und Ihre Marsha verliert morgen ihren Medizinstudienplatz. Haben Sie das verstanden?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Meineke</th>
+        <th onclick="quoteClick(this)">Meineke</th>
         <td>
           Ja.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Schicken Sie Frau Meineke zur Anerkennung für ihre Verschwiegenheit ein Geschenk.
         </td>
@@ -741,7 +745,7 @@
         <th colspan=2 class="directions"><place>Jerskas Wohnung</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           Schon wieder Donnerstag. Die Zeit vergeht so schnell. Er ist ja auch gut so.
         </td>
@@ -750,49 +754,49 @@
         <th colspan=2 class="directions">Hund bellt, Ehepaar streitet</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Wie geht's dir?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           Gar nicht so schlecht. Der Lärmpegel ist nicht immer so.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich weiß, nur an Donnerstagen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           <note>[Lacht]</note> Ja.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Wir haben dich vermisst bei der Premiere.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           Hatte Schwalber etwa einen guten Einfall?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Was gut war, hat er von dir geklaut.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           So bleibe ich lebendig.
           <br/> Nimm's mir nicht übel, aber ich kann den Anblick von diesen fetten, aufgetakelten Menschen bei so 'ner Premiere nicht mehr ertragen. Das klingt nicht nach mir, wenn du's so sagen willst.
@@ -800,26 +804,26 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           Freundlich und menschenlieb durch das Kraftfutter des Erfolgs… den ich der Gnädigkeit der Bonzen zu verdanken hatte.
           <br/> Aber ich werd' nicht mehr lange jammern. In meinem nächsten Leben werde ich einfach auch Schriftsteller. Ein Glücklicher Schriftsteller, der immer schreiben kann. Wie du.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>Was hat ein Regisseur, der nicht inszenieren darf? Nicht mehr als ein Filmvorführer ohne Film, ein Müller ohne Mehl, er hat gar nichts mehr. Gar nichts mehr.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Albert, auf der Premierenfeier war auch der Minister, Minister Hempf. Ich habe mit ihm über dein Verbot gesprochen.
           <br/> Es sieht gut aus. Er hat mir Hoffnung gemacht, ganz… wörtlich, ganz konkret.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           Wirklich?
           <br/> Das ist schön.
@@ -829,85 +833,85 @@
         <th colspan=2 class="directions"><place>Dreymans Wohnung</place>. Wiesler sitzt sich und hört:</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Billiger georgischer Wein, Marke Jerska. Und wie geht's unserem heiligen Trinker, kommt er?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Hab' vergessen ihn zu fragen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Du bist stark und kraftvoll und genauso brauch' ich dich. Hol dir nicht diese Kaputtheit in dein Leben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Albert ist mein Freund.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Und du bist meiner.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Sieht aus wie zum fünfzigsten, dabei bin ich doch vierzig, oder?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Und vergiss nicht, dass du mir versprochen hast, dass du zu deinem Geburtstag einen Schlips anziehst.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Das würd' ich ja gerne machen, ich hab' leider keinen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Bon anniversaire! <note>[Gibt zu Dreyman einen Geschenk.]</note>
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ein Schlips?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Du hast doch gesagt du willst keine Bücher. Oder kannst du am Ende gar keinen Schlips binden, du alter Arbeiterdichter?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich kein Schlips binden? Ich bin mit Schlips geboren. Du vergisst, dass ich mich mit eigener Kraft von den Fesseln des Bürgertums freikämpfen musste.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Dann lege sie nur für mich noch ein Mal an die Fesseln.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           So… Schlips binden… Kleinigkeit.
           <br/> Frau Meineke, bitte Frau Meineke, kommen Sie für einen Moment rein?
@@ -917,50 +921,50 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Meineke</th>
+        <th onclick="quoteClick(this)">Meineke</th>
         <td>
           Doch, mir geht's gut.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Fertig?
           <br/> Großartig, der ist perfekt, besser geht's nicht. Das muss aber unser Geheimnis bleiben. Können doch ein Geheimnis bewahren?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Meineke</th>
+        <th onclick="quoteClick(this)">Meineke</th>
         <td>
           Doch.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Donnerwetter. Und ich dachte wirklich du kannst es nicht. Du hälst doch sonst nicht mit deinen Fähigkeiten hinterm Berg.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Du ahnst ja nicht, was ich sonst noch alles kann.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Der erste Gast.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Klingeln</th>
+        <th onclick="quoteClick(this)">Klingeln</th>
         <td>
           Unsere lieben braven Nachbarn haben mal wieder unten zugesperrt. Gehst du?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ja, ich geh' schon.
         </td>
@@ -968,70 +972,70 @@
         <th colspan=2 class="directions">Sieland nimmt Tabletten. Später beginnt Partymusik.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Gast</th>
+        <th onclick="quoteClick(this)">Gast</th>
         <td>
           Meister! Unsere Gaben!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich hab' doch ausdrücklich gesagt keine Bücher. Danke.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Wollt ihr 'was trinken?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Gäste</th>
+        <th onclick="quoteClick(this)">Gäste</th>
         <td>
           Gerne, 'ne Selters.
           <br/> Für mich Vodka.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich hol euch was.
           <br/> Was soll das, warum sitzt Albert dort ganz allein?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wallner</th>
+        <th onclick="quoteClick(this)">Wallner</th>
         <td>
           Er will nicht mit uns reden. Er hat uns alle abgewiesen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           Ich hab' dir auch etwas mitgebracht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Bist du wirklich hier hergekommen um zu lesen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           Ist immerhin Brecht.
           <br/> Ich komm mir vor wie ein Hochstapler unter all diesen Leuten.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Hochstapler? Albert, komm! Du verlierst den Bezug zur Realität. Du weißt doch wie wir dich bewundern, wie alle dich bewundern.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Jerska</th>
+        <th onclick="quoteClick(this)">Jerska</th>
         <td>
           Ja, für etwas, das ich vor 10 Jahren gemacht habe… und wahrscheinlich gar nicht mehr könnte.
         </td>
@@ -1040,7 +1044,7 @@
         <th colspan=2 class="directions">Hauser sprecht mit Schwalber.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Ah, mein Lieblingsregisseur, warte doch mal! Warte um jetzt kleine Moment. Ich muss mal mit dir reden!
           <br/> Erklär' mir doch mal bitte genau wie du in diese Position gekommen bist, mh?
@@ -1049,43 +1053,43 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schwalber</th>
+        <th onclick="quoteClick(this)">Schwalber</th>
         <td>
           Das ist eine unglaubliche Unterstellung!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Paul!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Was?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Schwalber, entschuldigen Sie meinen Freund, er hat zu viel getrunken.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Was sollte denn das? Du weißt doch, dass er bei der Stasi ist.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Nein, Paul. Wissen tu ich es nicht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Du bist so ein jämmerlicher Idealist, dass du schon fast ein Bonze bist. Wer hat denn Jerska so kaputt gemacht? Genau solche Leute! Spitzer, Verräter und Anpasser!
           <br/> Irgendwann musst du Position beziehen, sonst bist du kein Mensch! Wenn du je etwas unternehmen willst, dann melde dich bei mir.
@@ -1093,38 +1097,38 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           <note>[Später]</note> Viel Geschmack haben deine Freunde nicht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Das ist wirklich ungerecht. Hier zum Beispiel der Rückenkratzer. Ist doch wunderschön!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Das ist 'ne Salatgabel!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Trotzdem, wunderschön.
           <br/> Guck mal hier. Mit dem werde ich mein neues Stück schreiben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Du hast eben auch keinen Geschmack!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           In manchen Sachen schon.
         </td>
@@ -1133,13 +1137,13 @@
         <th colspan=2 class="directions">Romantische Musik beginnt</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Von Jerska.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Er hat dir natürlich doch ein Buch geschenkt.
         </td>
@@ -1148,19 +1152,19 @@
         <th colspan=2 class="directions">„Sonate Vom Guten Menschen“.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler, Bericht</th>
+        <th onclick="quoteClick(this)">Wiesler, Bericht</th>
         <td>
           "Lazlo" und CMS packen die Geschenke aus. Danach vermutlich Geschlechtsverkehr.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sie sind zu spät.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Entschuldigen Sie, Genosse Hauptmann.
           <br/> Ich bin in so'ne Rotphase geraten, da kann man leicht mal 4 Minuten verlieren. Wissen Sie ja, wie das ist.
@@ -1169,7 +1173,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Bis morgen früh 11 Uhr.
         </td>
@@ -1186,30 +1190,30 @@
         <th colspan=2 class="directions"><place>Stasizentrale</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Albert Jerska, OV ,Engerling‘. Wiesler, wie gewohnt systematisch. Ich lasse die Akte rausholen. Gehen wir Mittagessen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Durchsage</th>
+        <th onclick="quoteClick(this)">Durchsage</th>
         <td> Die BSG Volleyballer treffen sich heute wie gewohnt um 19 Uhr in der kleinen Turnhalle.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Du warst lang nicht mehr hier. Der Stabstisch ist dort.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Irgendwo muss der Sozialismus doch beginnen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Wegen deiner Autokennzeichenanfrage von der Limousine, die Frau Sieland nachts heimlich nach Hause gebracht hat…
           <br/> Es handelt sich um den Wagen von Minister Hempf.
@@ -1217,7 +1221,7 @@
           </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           In Zukunft nichts schriftliches mehr darüber, wenn es etwas gibt, dann mündlich.
           <br/> Wir helfen also einem ZK Mitgliedseinen Rivalen aus dem Weg zu schaffen.
@@ -1225,19 +1229,19 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sind wir dafür angetreten? Weißt du noch unseren Eid damals? Schild und Schwert der Partei zu sein.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Was ist denn die Partei anderes als ihre Mitglieder? Und wenn die großen Einfluss haben, umso besser.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stigler</th>
+        <th onclick="quoteClick(this)">Stigler</th>
         <td>
           Ich hab wieder einen neuen.
           <br/> Also, Honecker kommt früh morgens in sein Büro, öffnet das Fenster, sieht die Sonne und sagt…
@@ -1245,7 +1249,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Nein, nein, ich bitte Sie, Herr Kollege, ich bitte Sie!
           <br/> Man wird doch über den Staatsratsvorsitzenden noch lachen dürfen!
@@ -1254,19 +1258,19 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stigler</th>
+        <th onclick="quoteClick(this)">Stigler</th>
         <td>
           Also… Honecker… also der Genosse Generalsekretär sieht die Sonne und sagt "Guten Morgen, liebe Sonne!"
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           <b>"Guten Morgen liebe Sonne!"</b> –so.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stigler</th>
+        <th onclick="quoteClick(this)">Stigler</th>
         <td>
           Und die Sonne antwortet: "Guten Morgen, lieber Erich!"
           <br/> Und am Mittag geht Erich wieder zum Fenster, macht es auf, sieht die Sonne und sagt: "Guten Tag, liebe Sonne!"
@@ -1274,7 +1278,7 @@
           </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stigler</th>
+        <th onclick="quoteClick(this)">Stigler</th>
         <td>
           Und Abends, nach Feierabend, geht Honecker wieder ans Fenster und sagt: "Guten Abend liebe Sonne!"
           <br/> Und die Sonne sagt nichts.
@@ -1283,32 +1287,32 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           <note>[Lacht]</note> Name? Dienstgrad? Abteilung?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stigler</th>
+        <th onclick="quoteClick(this)">Stigler</th>
         <td>
           Ich? Stigler.
           <br/> Unterleutnant Axel Stigler. Abteilung M.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Ich brauch ihnen wohl nicht zu sagen, was das für ihre Karriere bedeutet… was Sie da gerade getan haben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stigler</th>
+        <th onclick="quoteClick(this)">Stigler</th>
         <td>
           Bitte, bitte… Genosse Oberstleutnant, ich… ich hab' doch nur…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Sie haben doch nur… unsere Partei verhöhnt. Das war Hetze. Und sicher nur die Spitze des Eisberges. Das werd' ich dem Büro des Ministers melden.
           <br/> <note>[Lacht]</note> Das war doch nur Spaß! Der war gut, eh? Aber Ihrer war auch gut. Ich kenn' aber noch 'nen Besseren.
@@ -1319,19 +1323,19 @@
         <th colspan=2 class="directions">Außer Dreymans Wohnung</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sielands Freundin</th>
+        <th onclick="quoteClick(this)">Sielands Freundin</th>
         <td>
           Kommst mit?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Nee du, ich muss nach Hause. Nacht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Kalt?
           <br/> Christa, du hast unsere Verabredung am Donnerstag vergessen. Oder hatte dein Dichter vielleicht zwei Mal hintereinander Geburtstag?
@@ -1342,13 +1346,13 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ich bin verabredet.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Was glaubst du, wo ich hinfahre? Ich fahr' dich doch zu ihm! Da bist du nur noch schneller da!
         </td>
@@ -1357,20 +1361,20 @@
         <th colspan=2 class="directions">Hempf vergewaltigt Sieland. Später, sie geht zu <place>Dreymans Wohnung</place>.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Zeit für bittere Wahrheiten. <note>[Er klingelt den Tür.]</note>
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ja? <note>[Der Tür klingelt noch.]</note>
           <br/> Diese Idioten! <note>[Er geht draußen.]</note>
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Nächsten Donnerstag im Metropol. Fahren Sie.
         </td>
@@ -1379,25 +1383,25 @@
         <th colspan=2 class="directions">Traurige Thema beginnt. Sieland weint in der Dusche.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Christa?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Halt' mich einfach nur fest.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Guten Abend, Genosse Haupt—
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sie sind schon wieder fünf Minuten zu spät.
         </td>
@@ -1406,62 +1410,62 @@
         <th colspan=2 class="directions"><place>Wieslers Wohnung</place>. Der Tür klingelt.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Guten Abend. 11 Etage, rechter Gang.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Straßemädchen</th>
+        <th onclick="quoteClick(this)">Straßemädchen</th>
         <td>
           Ich bin schon oben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Wie sind Sie denn ins Gebäude gekommen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Straßemädchen</th>
+        <th onclick="quoteClick(this)">Straßemädchen</th>
         <td>
           Hier wohnen noch andere Jungs vom MFS.
           <br/> Ich glaube bei dir war ich noch nie.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Das glaube ich auch nicht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Straßemädchen</th>
+        <th onclick="quoteClick(this)">Straßemädchen</th>
         <td>
           Na? Hat das gut getan?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Bleib doch noch etwas bei mir.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Straßemädchen</th>
+        <th onclick="quoteClick(this)">Straßemädchen</th>
         <td>
           Ich kann nicht, ich hab' um halb den nächsten Kunden. Ich arbeite nach Termin.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Halb zwei, das schaffen Sie sowieso nicht mehr.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Straßemädchen</th>
+        <th onclick="quoteClick(this)">Straßemädchen</th>
         <td>
           Klar schaff' ich das, mach dir mal keine Sorgen. Und das nächste mal länger buchen. Tschüss.
         </td>
@@ -1480,62 +1484,62 @@
         </th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Georg? Hast du schon gehört wegen Hauser?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Nein, was denn?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Seine Vortragsreise in den Westen fällt flach, er kriegt keinen Reisepass.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Wundert dich das? Wenn er sich so arrogant verhält, dann muss er mit so etwas rechnen.
           <br/> Würdest du den ausreisen lassen an deren Stelle?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler, Bericht</th>
+        <th onclick="quoteClick(this)">Wiesler, Bericht</th>
         <td>
           CMS kommt nach Hause. "Lazlo" befürwortet Ausreiseverbot für Hauser.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Hast du eigentlich meinen gelben Brechtband gesehen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Wie?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Den Brechtband.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ich weiß nicht wo der ist.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Komisch, ich hätte schwören können…
         </td>
@@ -1544,7 +1548,7 @@
         <th colspan=2 class="directions">Vermutlich <place>Stasizentrale</place>. Wiesler liest das buch:</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           An jenem Tag im blauen Mondseptember, still, unter einem jungen Pflaumenbaum
           <br/> Da hielt ich sie, die Stille bleiche Liebe, in meinem Arm wie einen holden Traum
@@ -1556,32 +1560,32 @@
         <th colspan=2 class="directions"><place>Dreymans Wohnung</place>. Der Telefon klingt.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ja?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wallner</th>
+        <th onclick="quoteClick(this)">Wallner</th>
         <td>
           Georg? Hier Wallner.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Was ist der?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wallner</th>
+        <th onclick="quoteClick(this)">Wallner</th>
         <td>
           Georg, es geht um Jerska. Er ist tot, er hat sich letzten Abend erhängt.
           <br/> Georg?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich leg' jetzt auf, ja?
         </td>
@@ -1590,7 +1594,7 @@
         <th colspan=2 class="directions">Dreyman spielt Musik von „Sonata vom Guten Menschen“. <b>Wiesler weint.</b></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich musste daran denken, was Lenin über ,Appassionata‘ gesagt hat. „Ich kann sie nicht hören, sonst bring' ich die Revolution nicht zu Ende.“
           <br/> Kann jemand, der diese Musik gehört hat… ich meine wirklich gehört hat… ein schlechter Mensch sein?
@@ -1600,43 +1604,43 @@
         <th colspan=2 class="directions">Wiesler geht zu Hause.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Kind</th>
+        <th onclick="quoteClick(this)">Kind</th>
         <td>
           Bist du wirklich bei der Stasi?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Weißt du überhaupt, was das ist, die Stasi?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Kind</th>
+        <th onclick="quoteClick(this)">Kind</th>
         <td>
           Ja, das sind schlimme Männer, die andere einsperren, sagt mein Papa…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           So… wie heißt denn dein…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Kind</th>
+        <th onclick="quoteClick(this)">Kind</th>
         <td>
           Mein was?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           —Ball! Wie heißt denn dein Ball?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Kind</th>
+        <th onclick="quoteClick(this)">Kind</th>
         <td>
           Du bist aber komisch, Bälle haben doch keinen Namen!
         </td>
@@ -1645,13 +1649,13 @@
         <th colspan=2 class="directions">Nowack fahrt mit dem Auto. Grubitz und Hempf:</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Das ist alles geschehen, Genosse Minister. Die allerneuste operative Technik. Unter jedem einzelnen Lichtschalter, sogar im Klo. Eingangsbreich mit Maßnahme C…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Sie haben gesagt Sie finden etwas. Finden Sie 'was! Ich will meinem schlimmsten Feind nicht geraten haben mich zu enttäuschen.
           <br/> Jetzt verschwinden Sie!
@@ -1662,20 +1666,20 @@
         <th colspan=2 class="directions"><place>Stasizentrale</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Wir haben Hauser die Ausreisegenehmigung für die Konferenz im Kulturabkommen nicht gewährt. Vielleicht bringt das 'was ins Rollen. Die Beiden sind ja sehr eng.
           <br/> Und? Wie läuft's zwischen CMS und dem Minister?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sie sind morgen Abend verabredet, wenn ich den Rhythmus richtig verstehe.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Gut! Sehr gut! Wir beide haben an dieser Liebesgeschichte viel zu gewinnen. Oder zu verlieren. Vergiss das nicht.
         </td>
@@ -1684,7 +1688,7 @@
         <th colspan=2 class="directions"><place>Dreymans Wohnung</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Früher hatte ich immer nur vor zwei Sachen Angst: vor dem allein Sein und vor dem nicht schreiben Können.
           <br/> Seit Alberts Tod ist mir das Schreiben egal… und andere Menschen auch.
@@ -1692,37 +1696,37 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Heute Abend darfst du dich aber nicht fürchten. Ich gehe nämlich nur für ein paar Stunden weg.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Wohin?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ich treffe eine Klassenkameradin, die gerade in der Stadt ist.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Wirklich, Christa? <b>Wirklich?</b>
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Was fällt dir ein!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich weiß es. Ich weiß, wo du hingehen willst. Und ich bitte dich, gehe nicht da hin.
           <br/> Du brauchst ihn nicht.
@@ -1737,7 +1741,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Nein? Brauch' ich ihn nicht? Brauch' ich dieses ganze System nicht?
           <br/> Und du? Du brauchst es ja dann auch nicht. Oder erst recht nicht…
@@ -1747,7 +1751,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Du hast in so vielen Recht und ich will so viel anders machen.
           <br/> Aber ich bitte dich…
@@ -1755,7 +1759,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Na, Chef? Bin ich pünktlich? Lassen Sie mich raten, was die gerade machen… "Zack, zack, zack".
           <br/> Na kommen Sie, ich übernehm' schon. Ich kann doch nicht verantworten, dass Sie wegen mir Überstunden machen.
@@ -1763,13 +1767,13 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Treffen mit einer alten Klassenkameradin.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Detaillierten Bericht können Sie morgen lesen. Ich krieg' das hin. Gute Nacht.
         </td>
@@ -1778,138 +1782,138 @@
         <th colspan=2 class="directions"><place>Bar</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Barmann</th>
+        <th onclick="quoteClick(this)">Barmann</th>
         <td>
           Was glotzt'n so?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Selters. Nein, äh… Vodka. Doppelt.
           <br/> Nochmal das gleiche.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Bringen Sie mir einen Cognac, bitte.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Gnädige Frau?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Bitte lassen Sie mich in Ruhe, ich möchte alleine sein.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Frau Sieland.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Kennen wir uns?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sie kennen mich nicht, aber ich kenne Sie. Viele Menschen lieben Sie, weil Sie sind wie Sie sind.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ein Schauspieler ist nie so wie er ist.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sie doch. Ich habe sie auf der Bühne gesehen.
           <br/> Sie waren da mehr so wie Sie sind… als Sie es jetzt sind.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Sie wissen wie ich bin?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ich bin doch Ihr Publikum.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ich muss gehen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Wohin gehen Sie?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ich treffe eine alte Klassenkameradin. Ich…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sehen Sie?
           <br/> Da waren Sie gerade gar nicht Sie selbst.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Nein?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Nein.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Sie kennen sie also gut, diese Christa-Maria Sieland.
           <br/> Was meinen Sie… würde sie einen Menschen verletzen, der sie über alles liebt? Würde sie sich verkaufen für die Kunst?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Verkaufen für die Kunst? Die hat sie doch schon. Das wäre ein schlechtes Geschäft.
           <br/> Sie sind eine große Künstlerin. Wissen Sie das denn nicht?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Und Sie sind ein guter Mensch.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           <note>[Liest Udos Bericht]</note>
           <br/> Bei meiner Übernahme streiten Lazlo und CMS darüber, ob CMS zu dem treffen mit der Klassenkameradin gehen soll.
@@ -1923,19 +1927,19 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Oh, Genosse Hauptmann, ähm… Das war nur, weil… er schläft auch noch…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Guter Bericht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Echt jetz?
         </td>
@@ -1952,19 +1956,19 @@
         <th colspan=2 class="directions"><place>Jerskas Bestattung</place>.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich wusste nicht, dass es so schlimm um ihn steht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Ich auch nicht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           <note>[Liest]</note> Von einem, der rüber machte:
           <br/> Die staatliche Zentralverwaltung für Statistik in der Hans Beimler Straße zählt alles, weiß alles.
@@ -1975,7 +1979,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Sollten Sie in der Beimler Straße anrufen und fragen wie viele Menschen die Verzweiflung zwischen Elbe und Oder, zwischen Ostsee und dem Erzgebirge in den Tod getrieben hat, dann schweigt unser Zahlenorakel.
           <br/> Und notiert sich vermutlich genau Ihren Namen… für die Staatssicherheit.
@@ -1983,7 +1987,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Selbstmörder zu zählen. "Selbstmörder", so nannten sie sie. Dabei hat diese Tat mit Mord doch gar nichts zu tun.
           <br/> Sie kennt keinen Blutrausch, sie kennt keine Leidenschaft, sie kennt nur das Sterben, das Sterben der Hoffnung.
@@ -1995,7 +1999,7 @@
         <th colspan=2 class="directions"><place>Dreymans Wohnung</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Danach kamen gleich wir. Das Land des real existierenden Sozialismus.
           <br/> Einer dieser Ungezählten ist Albert Jerska der große Regisseur. Von ihm will ich heute erzählen…
@@ -2005,13 +2009,13 @@
         <th colspan=2 class="directions">Klingeln</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich habe versucht Statistiken zu bekommen, die zeigen–
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           –die zeigen wie viel erfolgreicher unsere Staatssicherheit arbeitet als wir so allgemein glauben!
           <br/> <note>[Er startet laute Musik, „Kommst Darunter“.]</note>
@@ -2019,7 +2023,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Wir können uns auch bei mir treffen.
         </td>
@@ -2028,62 +2032,62 @@
         <th colspan=2 class="directions">Hauser haltet eine Blatt Papier: „15 Uhr <place>Ehrenmal Pankow</place>“. Da:</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Und? Jetzt sicher genug?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Mein eigener kleiner "Leibwächter". Ich nenn' ihn Rolf. Wahrscheinlich heißt er auch so.
           <br/> Schieß' los.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Hier.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Das willst du veröffentlichen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Im Westen, mit deiner Hilfe. Wirst du mir helfen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Hast du Christa davon erzählt?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Nein.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Gut,  ich helfe dir unter der Bedingung, dass du's auch weiterhin vor ihr geheim hälst.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Was?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Georg, es ist doch auch um sie zu schützen.
           <br/> Das wär' 'was für'n ,Spiegel‘. Mit einem der Redakteure bin ich ganz gut befreundet.
@@ -2091,13 +2095,13 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Nicht persönlich.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Du musst ihn treffen.
           <br/> Aber unter deinem eigenen Namen veröffentliche, kommt nicht in Frage.
@@ -2106,7 +2110,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Doch zu mir?
           <br/> Bei mir ist keine Staatssicherheit!
@@ -2114,53 +2118,53 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wallner</th>
+        <th onclick="quoteClick(this)">Wallner</th>
         <td>
           Zweiter Klasse!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Meine Wohnung ist sauber, ich sag's euch.
           <br/> Wenn man da irgendwie sicher sein könnte…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Ich hätte schon eine Idee wie wir deine Wohnung überprüfen könnten.
           <br/> Ihr kennt doch mein' Onkel Frank, der jeden Samstag aus Westberlin zu Besuch kommt, mit seinem dicken goldenen Mercedes.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Also Herr Hauser, mir erscheint das alles doch ziemlich riskant.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wallner</th>
+        <th onclick="quoteClick(this)">Wallner</th>
         <td>
           Ja, da muss ich Georg Recht geben.
           <br/> Einfach die Rückbank ausbauen und ihren Neffen darunter verstecken? Ich weiß nicht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Frank</th>
+        <th onclick="quoteClick(this)">Frank</th>
         <td>
           Kommt schon, die schauen da nicht drunter. Bisschen mit dem Spiegel unter die Achse, bisschen am Auspuff rumgekloppt, und ab geht er, bin drüben und Paul auch.
           <br/> Nee nee, das sind nicht die hellsten an der Grenze. Ihr seht das vollkommen falsch.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           An welchem Grenzübergang fahren sie denn immer rüber?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Frank</th>
+        <th onclick="quoteClick(this)">Frank</th>
         <td>
           Heinrich-Heine Straße. Immer Heinrich-Heine Straße.
           <br/> Die kennen mich da schon, die Jungs, mich und meinen goldenen Mercedes. Ich bin richtig befreundet mit den Grenzern.
@@ -2169,19 +2173,19 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           <note>[Zu sich]</note> Nein!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Was ist eigentlich mit Pauls Stasimann?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Frank</th>
+        <th onclick="quoteClick(this)">Frank</th>
         <td>
           Rolf… Rolfechen, Rolfechen! Glaubt, dass Paulchen zu Hause sitzt.
           <br/> So und jetzt muss ich los.
@@ -2192,7 +2196,7 @@
         <th colspan=2 class="directions">Sinistere Musik beginnt. Wiesler ruft die Grenzübergangsstelle an.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grenzer</th>
+        <th onclick="quoteClick(this)">Grenzer</th>
         <td>
           Grenzübergangsstelle Heinrich-Heine Straße?
           <br/> Teilnehmer?
@@ -2200,7 +2204,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           <note>[Sagt nichts zu Grenzer]</note> Das eine Mal, Freundchen.
         </td>
@@ -2209,25 +2213,25 @@
         <th colspan=2 class="directions">Telefon klingt</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Dreyman.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Frank</th>
+        <th onclick="quoteClick(this)">Frank</th>
         <td>
           Okay, wie versprochen, Paul wäre drüben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Überhaupt keine Kontrolle?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Frank</th>
+        <th onclick="quoteClick(this)">Frank</th>
         <td>
           Nö, keine besonderen Kontrollen.
           <br/> Nur das Übliche, so schlimm sind die Jungs da gar nicht.
@@ -2235,50 +2239,50 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Na dann dank ich Ihnen vielmals, dass sie das für uns gemacht haben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Frank</th>
+        <th onclick="quoteClick(this)">Frank</th>
         <td>
           Keine Ursache, die Gefahr war nun wirklich nicht so groß.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ja, das stimmt auch wieder.
           <br/> Ja gut, dann bis bald und vielen Dank.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Frank</th>
+        <th onclick="quoteClick(this)">Frank</th>
         <td>
           Tschö.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wallner</th>
+        <th onclick="quoteClick(this)">Wallner</th>
         <td>
           Und was machen wir, wenn einer fragt, was wir hier eigentlich zusammen machen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Dann sagen wir… wir sagen ihr helft mir ein Stück zu schreiben. Ein Theaterstück.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wallner</th>
+        <th onclick="quoteClick(this)">Wallner</th>
         <td>
           Zum 40. Jahrestag der DDR.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ja. Irgendwie stimmt das ja sogar.
           <br/> Wer hätte gedacht, dass unsere Staatssicherheit so… unfähig ist?
@@ -2286,13 +2290,13 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Warte nur ab…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler, Bericht</th>
+        <th onclick="quoteClick(this)">Wiesler, Bericht</th>
         <td>
           Keine weiteren berichtenswerten Vorkommnisse.
         </td>
@@ -2301,87 +2305,87 @@
         <th colspan=2 class="directions">Später, Wiesler kommt. Udo gibt den Kopfhörer zu Wiesler.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Guten Tag, Genosse Hauptmann. Hören Sie sich das mal an.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           Warum die Rate '67 am höchsten war, das ist für uns fast noch verständlich, aber 1977… das müssen Sie schon erklären. Sie müssen doch die sozialen Umstände deutlicher machen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Es soll ein literarischer Text bleiben, keine journalistische Hetzschrift.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           Der Text ist großartig, wie er ist.
           <br/> Ich will doch nur sicherstellen, dass er auch bei uns richtig verstanden wird.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Er wird Furore machen, so oder so.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Das ist Hauser!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Na klar ist das Hauser.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Er ist ja gar nicht im Westen.
           <br/> Die schreiben zusammen ein Theaterstück. Zum Jubiläum, 40. Jahrestag.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Also… mir klingt das ja nicht nach Theaterstück.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Wonach klingt es denn für sie?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Ich weiß nicht, aber… nicht nach Theaterstück.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sie machen sich viele Gedanken, Oberfeldwebel Leye. Sie sind doch kein Intellektueller?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Ich? Nee… also… sowas bin ich nicht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Dann verhalten Sie sich nicht wie einer.
           <br/> Ich habe Sie für diese Aufgabe ausgewählt, weil es hieß, dass sie die Technik beherrschen und keine Fragen stellen.
@@ -2389,7 +2393,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Udo</th>
+        <th onclick="quoteClick(this)">Udo</th>
         <td>
           Schon gut, Genosse Hauptmann…
           <br/> Ich geh' dann mal. Schönen Tag noch.
@@ -2397,13 +2401,13 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Das hier kann ich vielleicht umschreiben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           Ich lasse Ihnen dann noch zukommen, was wir an Materialien haben. Zwei wochen. Können Sie das schaffen?
           <br/> Dann könnt' ich Sie noch in die erste Märzausgabe hineinbringen.
@@ -2414,80 +2418,80 @@
         <th colspan=2 class="directions">Den Tür öffnet.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Das ist Christa.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Georg?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Christa, das ist Gregor Hessenstein.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Christa Sieland.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           Das weiß ich doch.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Und? Was macht ihr hier so verschwörerisch?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Hauser und ich, wir wollen zusammen ein Theaterstück zum 40. Jahrestag der Republik schreiben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ein Stück zu zweit?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Der Spiegel will vielleicht darüber vorab berichten.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Und wer spielt die Hauptrolle?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Ja, das wollten wir dich sowieso fragen.
           <br/> Christa, wen würdest du lieber spielen? Lenin? Oder seine liebe alte Mutter. Du kannst es dir aussuchen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Gut, ich seh' schon, ich bin hier nicht erwünscht. Ich geh kurz schlafen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           Ich finde Ihre Vorsicht löblich. Je weniger Menschen von diesem Projekt wissen, desto besser. Mit der Stasi ist nicht zu scherzen.
           <br/> In dem Zusammenhang habe ich Ihnen auch etwas mitgebracht.
@@ -2497,13 +2501,13 @@
         <th colspan=2 class="directions">Hessenstein öffnet eine Tortekiste. Darin, eine Schreibmashine.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Die ganze Torte wäre mir lieber gewesen. Ich habe schon eine Schreibmaschine.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           …deren Schriftbild längst von der Stasi erfasst ist.
           <br/> Wenn dieser Text an der Grenze abgefangen wird, mit ihrer Maschine geschrieben, dann sind sie am nächsten in Hohenschönhausen.
@@ -2512,25 +2516,25 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Daran soll's nicht scheitern.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           Haben sie einen Ort, wo sie diese Schreibmaschine verstecken können, nach jedem Gebrauch?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ja, mir wird sicher 'was einfallen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           Nehmen Sie das nicht auf die leichte Schulter.
           <br/> Ich will nicht den nächsten Artikel darüber schreiben müssen, dass niemand weiß, wo Georg Dreyman abgeblieben ist.
@@ -2538,19 +2542,19 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ja.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Diese Wohnung ist der letzte Ort in der DDR, wo ich ungestraft sagen kann, was ich will.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hessenstein</th>
+        <th onclick="quoteClick(this)">Hessenstein</th>
         <td>
           Gut, dann lassen Sie uns darauf anstoßen.
           <br/> Die Flasche ist nämlich echt.
@@ -2561,13 +2565,13 @@
         <th colspan=2 class="directions">Wiesler schreibt einen Bericht und bringt ihn zu <place>Stasibüro</place>.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Zu Genosse Grubitz, Hauptmann Wiesler. Es ist dringend.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sekretärin</th>
+        <th onclick="quoteClick(this)">Sekretärin</th>
         <td>
           Der früheste Termin, die ich Ihn geben kann ist leider erst morgen, 14.30 Uhr…
         </td>
@@ -2576,7 +2580,7 @@
         <th colspan=2 class="directions">Wiesler geht trotzdem in Grubitzs Büro.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           <note>[An Telefon]</note>
           <br/> Sag ihm, wenn er den IM enttarnt, dann wird seine ganze Kirche geschlossen! So einfach ist das! Soll der Papst anrufen und sich beschweren! Ja, jetzt los, ich hab' mich lang genug mit diesem Blödsinn beschäftigt. Ja.
@@ -2584,7 +2588,7 @@
           </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           „Haftbedingungen für politisch-ideologische Diversantender Kunstszene nach Charakterprofil.“
           <br/> Ist das wissenschaftlich? Und schau' mal hier: „Dissertation betreut durch Professor Anton Grubitz.“
@@ -2592,7 +2596,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Ich hab' ihm zwar nur 'ne 2 gegeben… Die sollen nicht gleich denken, dasspromovieren bei mir einfach ist.
           <br/> Aber es ist wirklich erstklassig.
@@ -2600,21 +2604,21 @@
           </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Deiner zum Beispiel, Dreyman, das ist Typ 4, hysterischer Anthroprozentriker. Kann nicht alleine sein. Muss immer reden und immer Freunde um sich haben. Bei so einem darf man es auf keinen Fall zum Prozess kommen lassen. Dann würde der aufblühen.
           <br/> Das muss alles in der U-Haft ablaufen. Ganz ohne Öffentlichkeit. Da wird man viel schneller mit dem fertig.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Völlige Einzelhaft, ohne ihm zu sagen wie lange er drin sein wird. Kein Kontakt zu irgendwem in der ganzen Zeit, nicht einmal zu den Wächtern.
           <br/> Beste Behandlung derweil, keine Schikanen, keine Misshandlungen, Skandale… Nichts, worüber er später schreiben könnte. Nach 10 Monaten lassen wir ihn frei. Überraschend. Der macht uns keine Probleme mehr.
           </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Weißt du, was das Allerbeste ist? Die meisten von diesem Typ 4,
           <br/> die wir so bearbeitet haben, schreiben nachher überhaupt nicht mehr oder malen nicht mehr oder was auch immer so Künstler tun. Und das ohne, dass wir irgendeinen Druck ausüben. Einfach so. Sozusagen… als Geschenk.
@@ -2622,65 +2626,65 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Darüber wollte ich mit dir sprechen. Ich glaube es ist an der Zeit…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           An der Zeit was?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           …dass wir den Vorgang verkleinern.
           <br/> Ich möchte nicht Tages -und Nachtschicht für einen so… unsicheren Fall beanspruchen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Unsicher, mh?
           <br/> Du glaubst also nicht, dass wir etwas finden? Für den Minister?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Vielleicht wenn wir den Fall verkleinern, beweglicher machen.
           <br/> Wenn wir Lazlo auch außerhalb seiner Räume aufklären können.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Soll ich Udo den Fall übergeben?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ich würde ihn gern selber weiterführen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Warum?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Es könnte schon noch 'was dabei herauskommen. Ich müsste nur freier einteilen können.
           <br/> Wann ich komme, wann ich gehe… Tags, nachts. Vielleicht macht er ja 'was außerhalb seiner Wohnung.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Irgendetwas gefällt mir da nicht. Irgendetwas sagst du mir nicht.
           <br/> Also gut, ich ziehe Udo ab. Ich kann ihn ganz gut verwenden für diesen Kirchenfall.
@@ -2692,7 +2696,7 @@
         <th colspan=2 class="directions"><place>Dreymans Wohnung</place>. Musik „Stell dich mitten in den Regen“ beginnt.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           „Die Zentralverwaltung für Statistik in der Hans-Beimler Straße zählt alles, weiß alles.
           <br/> Wie viele Schuhe ich im Jahr kaufe: 2.3.
@@ -2701,7 +2705,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler, Bericht</th>
+        <th onclick="quoteClick(this)">Wiesler, Bericht</th>
         <td>
           "Lazlo" liest Hauser und Wallner den ersten Akt des Jubiläumsstücks vor.
         </td>
@@ -2710,25 +2714,25 @@
         <th colspan=2 class="directions">Sieland kommt und sieht, wo den Schreibmasschine versteckt wurde.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Es ist kein Theaterstück, was wir schreiben, Christa.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Du brauchst es mir nicht zu erzählen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich möchte es dir aber erzählen. Es ist ein Text—
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Sag's mir nicht.
           <br/> Vielleicht bin ich ja wirklich so unzuverlässig wie deine Freunde sagen. Aber ich bin jetzt ganz bei dir. Ganz egal was.
@@ -2738,7 +2742,7 @@
         <th colspan=2 class='directions'>Dreyman schaltet den Fernsehgeräte an. Im Nachrichten:</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sprecher</th>
+        <th onclick="quoteClick(this)">Sprecher</th>
         <td>
           Bundesforschungsminister Riesenhuber, der den Bericht eingebracht hatte, betonte, dass es zur Rettung bereits geschädigter
           <br/> Wälder kein Patentrezept gebe.
@@ -2746,14 +2750,14 @@
           </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sprecher</th>
+        <th onclick="quoteClick(this)">Sprecher</th>
         <td>
           Das Nachrichtenmagazin der Spiegel veröffentlichte heute als Titelgeschichte den Text eines ungenannten ostdeutschen Autors zum Selbstmord in der Deutschen Demoktratischen Republik.
           <br/> Anlass war eine Reihe von Suiziden prominenter ostberliner Künstler, zuletzt des Theaterregisseurs Albert Jerska.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sprecher</th>
+        <th onclick="quoteClick(this)">Sprecher</th>
         <td>
           Jerska hatte sich nach einem 7 Jahre anhaltenden Berufsverbot am 5. Januar dieses Jahres das Leben genommen.
           <br/> 1977 hörte die DDR auf ihr Selbstmordstatistik zu veröffentlichen. In diesem Jahr hatte Ungarn als einziges europäisches Land eine höhere Rate.
@@ -2771,50 +2775,50 @@
         <th colspan=2 class="directions"><place>Stasizentrale</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Jawohl, Genosse Armeegeneral, wir haben… Ja wir haben…
           <br/> Genosse Armeegeneral wir haben durch einen I.M. in der Spiegelredaktion in Hamburg eine Lichtpause des Originalartikels bekommen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">General</th>
+        <th onclick="quoteClick(this)">General</th>
         <td>
           Gratuliere! Wer hat es geschrieben?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Er wusste auch nicht, wer der Autor war, aber auf Grund des Schriftbildes der Schreibmaschine können wir…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">General</th>
+        <th onclick="quoteClick(this)">General</th>
         <td>
           Sie können überhaupt nichts! Bringen Sie mir endlich Namen!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Das werde ich, Genosse Armeegeneral, sobald es Ergebnisse…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">General</th>
+        <th onclick="quoteClick(this)">General</th>
         <td>
           Das will ich hoffen, sonst stell ich sie an die Wand.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Andrea, wo bleibt der Schriftexperte?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schriftexperte</th>
+        <th onclick="quoteClick(this)">Schriftexperte</th>
         <td>
           Und so komme ich zu dem Schluss, dass die Schreibmaschine nur eine für den Export bestimmte, heimische Reiseschreibmaschine modernster Ausführung sein kann.
           <br/> Mit größter Wahrscheinlichkeit das Modell "Kolibri" der VEB Groma Büromaschinen.
@@ -2822,80 +2826,80 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Und wer hat so eine Schreibmaschine?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schriftexperte</th>
+        <th onclick="quoteClick(this)">Schriftexperte</th>
         <td>
           So eine Maschine ist in unserer Republik nirgends erfasst.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Was soll'n das heißen? Auf was schreibt denn zum Beispiel Hauser?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schriftexperte</th>
+        <th onclick="quoteClick(this)">Schriftexperte</th>
         <td>
           Der Journalist Paul Hauser schreibt auf dem Modell 'Valentino' des Olivetti Betriebes. Bei diesem Modell wäre der Anschlagswinkel…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Ja, ja, ja, und Wallner?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schriftexperte</th>
+        <th onclick="quoteClick(this)">Schriftexperte</th>
         <td>
           Schreibt auf einer heimischen Optima Elite.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Georg Dreyman?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schriftexperte</th>
+        <th onclick="quoteClick(this)">Schriftexperte</th>
         <td>
           Georg Dreyman schreibt seine ersten Entwürfe per Hand und die Reinschrift dann auf einer original Wanderer Torpedo. Er hat noch nie auf irgendetwas anderem geschrieben.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Wie groß wäre denn diese Kolibri Schreibmaschine?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schriftexperte</th>
+        <th onclick="quoteClick(this)">Schriftexperte</th>
         <td>
           Sie ist eine der kleinsten industriell hergestellten Maschinen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Also nicht schwerer zu schmuggeln als ein Buch.
           <br/> Danke, Sie können gehen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schriftexperte</th>
+        <th onclick="quoteClick(this)">Schriftexperte</th>
         <td>
           Wiedersehen, Genosse.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Andrea, verbinden Sie mich bitte mit Hauptmann Gerd Wiesler.
         </td>
@@ -2904,7 +2908,7 @@
         <th colspan=2 class="directions"><place>Dreymans Wohnung</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler, Bericht</th>
+        <th onclick="quoteClick(this)">Wiesler, Bericht</th>
         <td>
           Die Gruppe ist sehr ermüdet vom vielen Schreiben.
         </td>
@@ -2913,44 +2917,44 @@
         <th colspan=2 class="directions">Telefonlicht blinkt</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ja bitte?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Wiesler, hast du von diesem Selbstmordartikel gehört?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Im Spiegel? Ja.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Und woher?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Hauser hat Dreyman angerufen und ihm davon erzählt.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Wiesler, das ist hier sehr sehr wichtig, für meine Karriere und für deine Karriere.
           <br/> Hat er irgendetwas erwähnt, wer dahinter stecken könnte? Oder hast du Ideen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ich glaube nicht, dass er etwas erwähnt hat, nein, er hat nichts erwähnt.
         </td>
@@ -2959,7 +2963,7 @@
         <th colspan=2 class="directions">Sinistere Musik beginnt.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Ein Spiegelredakteur hat am 27. unter verdecktem Namen im Grenzübergang an der Bornholmer Straße passiert und sich 4 Stunden hier aufgehalten. Gregor Hessenstein.
           <br/> Die Abteilung 6 hat ihn bis zum Prenzlauer Berg verfolgt und dann aus den Augen verloren.
@@ -2967,13 +2971,13 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Hätte ich das nicht im Bericht vermerkt?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Ja ja, natürlich… Aber irgendwie riecht dieser Text nach Schriftsteller.
           <br/> Ich wäre erstaunt, wenn ich mich da irre. Also halt' die Ohren offen.
@@ -2984,44 +2988,44 @@
         <th colspan=2 class="directions">Grubitz geht draußen zum Auto. Hempf, darin:</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Steigen Sie ein.
           <br/> Wenn Sie ein Mitarbeiter hintergeht, dann strafen Sie ihn nach Kräften oder etwa nicht?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Doch! Doch, doch!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Auch eine Frau… oder etwa nicht?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Selbstverständlich.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Und ist nicht jeder, der einem großen Mann dient, sein Mitarbeiter?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Das könnte man so sagen… müsste man vielleicht sogar so sagen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Dort wird sie ihre illegalen Psychopharmaka beziehen. Christa-Maria Sieland.
           <br/> Ich denke sie sollten das wissen, es fällt in Ihren Bereich.
@@ -3034,13 +3038,13 @@
         <th colspan=2 class="directions"><place>Apotheke</place>. Sieland kauft Drogen.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Arzt</th>
+        <th onclick="quoteClick(this)">Arzt</th>
         <td>
           Tür zu!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stasiarbeiter</th>
+        <th onclick="quoteClick(this)">Stasiarbeiter</th>
         <td>
           Frau Sieland? Bitte folgen Sie mir zur Klärung eines Sachverhalts.
           <br/> Kommen Sie.
@@ -3050,7 +3054,7 @@
         <th colspan=2 class="directions">Sie kommt in dem Wagen zu <place>Hohenschönhausen</place>.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Tja… 
           <br/> Genossin Sieland, das Ende einer schönen Karriere, mh?
@@ -3060,51 +3064,51 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Bitte… Gibt es nicht irgendetwas, das ich für sie tun kann? Für…für die Staatssicherheit?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Dafür ist es etwas spät.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ich kenne fast alle unsere Künstler. Ich könnte viel für sie herausfinden.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Das glaube ich Ihnen. Aber es wird Ihnen nicht mehr helfen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Vielleicht gibt es ja etwas anderes, was ich tun könnte?
           <br/> Etwas, was uns beiden nicht ganz unangenehm wäre.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Leider haben Sie sich… naja wie soll ich sagen… einen mächtigen Mann zum Feind gemacht.
           <br/> Ich bin deswegen weniger frei als ich es sonst wäre.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Gibt es denn irgendetwas, wodurch ich mich noch retten kann?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Bedaure, Gnädigste.
           <br/> Es gäbe da noch eine Sache… Wenn Sie sich schon so viel mit Literaten und… Künstlern umgeben…
@@ -3115,20 +3119,20 @@
         <th colspan=2 class="directions">Sieland lacht und gleichzeitig weint. In <place>Dreymans Wohnung</place> beginnt sinistere Musik.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Staatssicherheit! Öffnen Sie die Tür!
           <br/> Aufmachen!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Oberstleutnant</th>
+        <th onclick="quoteClick(this)">Oberstleutnant</th>
         <td>
           Er hat das Licht im Arbeitszimmer angeschaltet. Brecht die Tür auf, bevor er Beweismaterial vernichten kann.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Brecheisen!
         </td>
@@ -3137,26 +3141,26 @@
         <th colspan=2 class="directions">Dreyman öffnet den Tür.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich glaube das wird nicht nötig sein.
           <br/> Was ist denn los, Genossen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Wir haben den Befehl Ihre Wohnung zu durchsuchen. Hier die richterliche Bestätigung.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Was suchen sie denn?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Geheimsache.
           <br/> Boysen, Müller: Schlafzimmer.
@@ -3166,80 +3170,80 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Was verbrennen Sie darin?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Schlechte Texte.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Reichlich Westliteratur, wie?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Der Band gerade ist ein Geschenk von Margot Honecker.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Oberstleutnant</th>
+        <th onclick="quoteClick(this)">Oberstleutnant</th>
         <td>
           Wie ist der Stand?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Alles läuft nach Plan.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stasiarbeiter</th>
+        <th onclick="quoteClick(this)">Stasiarbeiter</th>
         <td>
           Nichts gefunden, allerdings verschiedene Bände Westliteratur und Westzeitungen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Keine Spur von dem Gesuchten.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Oberstleutnant</th>
+        <th onclick="quoteClick(this)">Oberstleutnant</th>
         <td>
           Waren sie auch gründlich?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           Jawohl, Genosse Oberstleutnant. Wie verfahren wir weiter?
           <br/> Genosse Oberstleutnant?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Oberstleutnant</th>
+        <th onclick="quoteClick(this)">Oberstleutnant</th>
         <td>
           Ziehen sie Ihre Männer ab.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Leutnant</th>
+        <th onclick="quoteClick(this)">Leutnant</th>
         <td>
           <note>[Zu Dreyman]</note> Sollte widererwartend irgendetwas beschädigt worden sein, können Sie sich beim Ministerium melden.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Ich bin sicher es ist alles in bester Ordnung.
         </td>
@@ -3248,13 +3252,13 @@
         <th colspan=2 class="directions">Wieslers Telefonlicht blinkt</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ja bitte?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Wiesler, ich erwarte dich morgen früh 9 Uhr in Hohenschönhausen.
         </td>
@@ -3263,32 +3267,32 @@
         <th colspan=2 class="directions"><place>Ehrenmal Pankow</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Gut, dann werd' ich mal sagen, was wir alle denken. Es war Christa-Maria.
           <br/> Die Stasi hat sie geschnappt und sie hat dich verraten.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Sie war es nicht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Woher willst du das wissen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wallner</th>
+        <th onclick="quoteClick(this)">Wallner</th>
         <td>
           Du hast doch selbst gesagt, dass sie die letzte Nacht nicht bei dir war.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Sie kennt das Versteck. Ja, sie kennt es.
           <br/> Also wenn du Recht hast und die Durchsuchung wirklich auf sie zurückgeht, dann ist sie unser größter Schutzengel.
@@ -3298,19 +3302,19 @@
         <th colspan=2 class="directions"><place>Hohenschönhausen</place>. Sehr sinistere Musik. Wiesler fahrt darin und zeigt sein Identität.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Zu Oberstleutnant Grubitz. Hauptmann Wiesler.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wache</th>
+        <th onclick="quoteClick(this)">Wache</th>
         <td>
           Verhörraum Nummer 76.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Ja! Komm rein.
           <br/> Setz' dich.
@@ -3318,37 +3322,37 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Was sollte das?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Was sollte das? Das fragst du mich?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Wessen verdächtigst du Dreyman?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Er ist der Autor des Spiegelartikels.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Wer hat das behauptet?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Komm' mit.
           <br/> <note>[Zeigt Haftraum]</note> Hier.
@@ -3359,37 +3363,37 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ja.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Dann versau's nicht noch einmal.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Offizier</th>
+        <th onclick="quoteClick(this)">Offizier</th>
         <td>
           Soll ich den Gefangen fixieren?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Sie ist keine Gefangene mehr, sie ist jetzt I.M., Sie können gehen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Sie sind also mein Führungsoffizier? Dann führen Sie mich.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Noch 10 Stunden… Nein, eigentlich neun ein halb.
           <br/> Wird Herr Roessing vor das Publikum treten und ansagen, dass sie wegen einer Unpässlichkeit leider nicht spielen können.
@@ -3398,13 +3402,13 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Es gibt keine Beweise, es gibt keine Schreibmaschine, das habe ich erfunden.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ich hoffe nicht. Denn dann müssen wir auch Sie hier behalten.
           <br/> Eine Falsche Aussage im Verhör ist gleichbedeutend mit Meineid. Das heißt ungefähr 2 Jahre Haft.
@@ -3412,28 +3416,28 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Retten Sie jetzt wenigstens sich selber.
           <br/> Sie würden nicht glauben wie viele Menschen hier wegen sinnlosem Heroismus im Gefängnis sitzen. Denken Sie an Ihr Publikum.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           <note>[Hört]</note>
           <br/> "Denken Sie an Ihr Publikum!" Dem fällt wirklich auch was ein…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Denken Sie daran, was der Staat für Sie getan hat. Ihr ganzes Leben lang. Jetzt können Sie etwas für den Staat tun. Und er wird es Ihnen danken.
           <br/> Sagen sie mir, wo die Maschine versteckt ist. Dreyman wird nie etwas erfahren.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ich lasse Sie sofort frei und wir schlagen erst zu, wenn Sie bei ihm sind.
           <br/> Erstaunt zu spielen, das werden sie doch wohl schaffen. Und heute Abend sind Sie wieder im Theater. In Ihrem Element. Vor Ihrem Publikum.
@@ -3444,13 +3448,13 @@
         <th colspan=2 class="directions">Dramatische Musik beginnt.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Sie sind in der Wohnung. Unter der Türschwelle… zwischen Wohnzimmer und Flur. Man kann sie abnehmen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           <note>[Zeigt Bild]</note> Meinen Sie hier? Machen sie ein Kreuz auf die richtige Stelle.
         </td>
@@ -3459,7 +3463,7 @@
         <th colspan=2 class="directions"><place>Draußen</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Sie sehen bisschen mitgenommen aus. Vergessen Sie nicht, Sie sind jetzt I.M.
           <br/> Das bedeutet Pflichten wie Konspiration und Verschwiegenheit, aber auch Privilegien…
@@ -3469,19 +3473,19 @@
         <th colspan=2 class="directions">Er gibt ihr Drogen. Sie geht.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           <note>[Zu Wache]</note> Rufen Sie mir Wiesler!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wache</th>
+        <th onclick="quoteClick(this)">Wache</th>
         <td>
           Hauptmann Wiesler hat das Objekt bereits verlassen, Genosse Oberstleutnant!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Achso!
           <br/> Ja gut, ja, sie können wegtreten.
@@ -3491,13 +3495,13 @@
         <th colspan=2 class="directions"><place>Dreymans Wohnung</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hauser</th>
+        <th onclick="quoteClick(this)">Hauser</th>
         <td>
           Was macht ein Reiter, wenn er abgeworfen wird? Er steigt gleich wieder auf. Geh' rein und schlaf' dich aus. Es hat nichts mit dem Haus zu tun, was passiert ist.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Nein, aber mit dem ganzen Land.
         </td>
@@ -3506,37 +3510,37 @@
         <th colspan=2 class="directions">Er geht darin. Wiesler versteckt sich vor dem Blocktür. Später kommt Sieland darin.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Christa!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Komm' nicht näher, ich war bei Kerschners und es gab kein Wasser, ich muss erst duschen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Du hattest es ziemlich eilig von Hohenschönhausen loszufahren!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Noch läuft ja der OV Lazlo.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Sind sie beide in der Wohnung?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Ja. Der Bericht für heute. Der letzte Tagesbericht des OV Lazlo.
         </td>
@@ -3545,55 +3549,55 @@
         <th colspan=2 class="directions">Sieland duscht.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Warum hast du mich nicht angerufen?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Wie?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Warum du mich nicht angerufen hast…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ich war auf dem Land. Reichst du mir die Nagelbürste?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Die Stasi war da. Haben die Wohnung durchsucht.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Wer war da?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stasiarbeiter</th>
+        <th onclick="quoteClick(this)">Stasiarbeiter</th>
         <td>
           Staatssicherheit! Öffnen Sie!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Bleib hier.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Guten Tag, Genosse Dreyman.
           <br/> Oberstleutnant Grubitz vom Ministerium für Staatssicherheit.
@@ -3602,7 +3606,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Männer, blättern sie vorsichtig die Bücher nach Zetteln durch.
           <br/> <note>[Sieht Schwelle]</note> Na, was haben wir denn da? Diese Schwelle scheint mir nicht ganz koscher. Könnte das ein Geheimfach sein?
@@ -3612,7 +3616,7 @@
         <th colspan=2 class="directions">Traurige Musik beginnt. Sieland geht draußen.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Lassen Sie, sie steht hier nicht unter Verdacht.
           <br/> Die Schauspielerin…
@@ -3622,27 +3626,27 @@
         <th colspan=2 class="directions">Draußen springt Sieland im Weg des Autos. Dreyman sieht Sielands Körper.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland</th>
+        <th onclick="quoteClick(this)">Sieland</th>
         <td>
           Ich war zu schwach…
           <br/> Ich kann nie wieder gut machen, was ich getan habe.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Es gibt nichts gut zu machen, verstehst du? Es gibt nichts gut zu machen.
           <br/> Ich habe die Maschine…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Verzeih mir… verzeih mir… verzeih mir… verzeih mir…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Fahren Sie mit Ihren Männern zurück in die Zentrale. Der Einsatz ist beendet.
           <br/> Genosse Dreyman, wir haben wohl einen falschen Hinweis bekommen. Entschuldigen Sie.
@@ -3653,7 +3657,7 @@
         <th colspan=2 class="directions">Im Auto</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz</th>
+        <th onclick="quoteClick(this)">Grubitz</th>
         <td>
           Über eines solltest du dir keine Illusionen machen, Wiesler. Deine Karriere ist vorbei.
           <br/> Auch wenn du natürlich zu schlau warst um Spuren zu hinterlassen. Du wirst höchsten noch in irgendeinem Kellerloch Briefe aufdampfen. Bis zu deiner Rente.
@@ -3672,13 +3676,13 @@
         <th colspan=2 class="directions">4 Jahre und 7 Monate später</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Stigler</th>
+        <th onclick="quoteClick(this)">Stigler</th>
         <td>
           Die Mauer ist offen! Die Mauer ist offen!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Radio</th>
+        <th onclick="quoteClick(this)">Radio</th>
         <td>
           Die Grenzer öffnen tatsächlich die Tore! Die Freude ist unermesslich, hören Sie den Jubel!
           <br/> Die Menschen stürmen zu tausenden heraus. Es ist unglaublich!
@@ -3689,26 +3693,26 @@
         <th colspan=2 class="directions">2 Jahre später, im Theater</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schauspielerin</th>
+        <th onclick="quoteClick(this)">Schauspielerin</th>
         <td>
           Mein liebes Kind, was hast du?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Martha</th>
+        <th onclick="quoteClick(this)">Martha</th>
         <td>
           Dein Arthur lebt nicht mehr.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Schauspielerin</th>
+        <th onclick="quoteClick(this)">Schauspielerin</th>
         <td>
           Arthur? Kannst du dich dieses eine Mal nicht irren?
           <br/> Ich habe ihn doch heute Morgen noch gesehen!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Martha</th>
+        <th onclick="quoteClick(this)">Martha</th>
         <td>
           Nein, Schwester, glaube mir. Er ist gestürzt.
           <br/> Die treuen Männer stehen um ihn wie ihr um mich und werfen ob der hohen Sonne nur sieben kurze Schatten noch auf seinen edlen toten Leib.
@@ -3716,7 +3720,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Martha</th>
+        <th onclick="quoteClick(this)">Martha</th>
         <td>
           Ich sehe es…und würd' doch jeden Schrecken lieber sehen.
           <br/> Warum bleibt mir dies Sehen nicht erspart?
@@ -3728,7 +3732,7 @@
         <th colspan=2 class="directions">Dreyman geht aus.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Zu viele Erinnerungen, was? Mir ging es genau so, ich musste auch raus.
           <br/> Aber was höre ich von Ihnen? Nichts mehr geschrieben seit der Wende? Das finde ich nicht gut.
@@ -3736,7 +3740,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Im Grunde verstehe ich Sie, Dreyman. Was soll man noch schreiben, in dieser BRD?
           <br/> Nichts mehr da, woran man glauben kann. Nichts, wogegen man rebellieren kann.
@@ -3744,57 +3748,57 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Eine Sache muss ich Sie doch noch fragen.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Alles, mein lieber Dreyman. Alles.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Warum wurde ich eigentlich nie abgehört?
           <br/> Sie haben doch jeden überwachen lassen. Warum nicht mich?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Sie wurden komplett überwacht! Wir wussten alles über Sie.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Komplett überwacht, sagen Sie?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Komplett verwanzt. Das volle Programm.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Das kann nicht sein!
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Hempf</th>
+        <th onclick="quoteClick(this)">Hempf</th>
         <td>
           Dann schauen sie bei Gelegenheit hinter Ihre Lichtschalter.
           <br/> Wir wussten alles. Wir wussten sogar, dass Sie's es unserer kleinen Christa nicht so richtig besorgen konnten.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Dass Leute wie Sie wirklich mal ein Land geführt haben…
         </td>
@@ -3803,7 +3807,7 @@
         <th colspan=2 class="directions"><place>Bundesbeauftragte für die Stasi-Unterlagen</place></th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Arbeiter</th>
+        <th onclick="quoteClick(this)">Arbeiter</th>
         <td>
           Sie müssen sich noch einen Moment gedulden, in Ihrem Fall sind es die eine oder andere Akte mehr.
           <br/> Ich habe chronologisch ordnen lassen. Die Alten sind hier oben und die Neueren hier unten.
@@ -3814,7 +3818,7 @@
         <th colspan=2 class="directions">Sinistere Musik</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler, Bericht</th>
+        <th onclick="quoteClick(this)">Wiesler, Bericht</th>
         <td>
           Operativvorgang Lazlo, gegen Georg Dreyman, Deckname Lazlo, eröffnet.
           <br/> Hinweis auf Verdacht kam durch Minister Bruno Hempf.
@@ -3823,7 +3827,7 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler, Bericht</th>
+        <th onclick="quoteClick(this)">Wiesler, Bericht</th>
         <td>
           Lazlo und CMS packen Geschenke aus, danach vermutlich Geschlechtsverkehr.
           <br/> Bei dem Besuch handelt es sich um Paul Hausers Onkel aus Westberlin.
@@ -3831,27 +3835,27 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz, Bericht</th>
+        <th onclick="quoteClick(this)">Grubitz, Bericht</th>
         <td>
           Wir erwarten genauere Angaben zum geplanten Jubiläumsstück. Inhaltsangabe, etc.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Inhalt des ersten Aktes:
           <br/> Lenin ist in ständiger Gefahr. Trotz steigendem Drucks von außen, bleibt er bei seinen revolutionären Plänen. Lenin ist sehr erschöpft.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           HGW…
           <br/> HGW XX-7…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Sieland, Bericht</th>
+        <th onclick="quoteClick(this)">Sieland, Bericht</th>
         <td>
           Ich, Christa-Maria Sieland, verpflichte mich freiwillig inoffiziell mit dem Ministerium für Staatssicherheit zusammenzuarbeiten. Dieser Entschluss beruht auf meiner Überzeugung, dass ich durch die Zusammenarbeit…
           <br/> Georg Dreyman ist der Autor des Spiegelartikels „Von einem, der rüber machte“.
@@ -3859,19 +3863,19 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz, Bericht</th>
+        <th onclick="quoteClick(this)">Grubitz, Bericht</th>
         <td>
           Christa Maria Sieland wurde am 10. März 1985 auf Hinweise Minster Hempf wegen Drogenmissbrauchs inhaftiert und am 11. März wieder in die Stadt gebracht. Nachdem sie das Versteck von Lazlos Unterlagen offenbart und die I.M. Verpflichtung Deckname Martha unterschrieben hat.
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Wann hat sie dann denn…
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Grubitz, Bericht</th>
+        <th onclick="quoteClick(this)">Grubitz, Bericht</th>
         <td>
           In Folge der erfolglosen Hausdurchsuchung am 11. März 1985 und des Unfalltodes der I.M. Marta wird der OV Lazlo eingestellt.
           <br/> Zwischennotiz: Beförderungssperre von HGW wird heute Wirksam. Pflichtversetzung in die Abteilung M.
@@ -3879,14 +3883,14 @@
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler, Bericht</th>
+        <th onclick="quoteClick(this)">Wiesler, Bericht</th>
         <td>
           10.50 Uhr. Aufnahme des Kontrollpostens vor Lazlos Haus. Um 15.10 Uhr kommt I.M. Marta direkt aus Hohenschönhausen zu ihm.
           <br/> Hausdurchsuchung mit Ergebnisbericht folgt. Ende des OV Lazlo. HGW, 15.15 Uhr."
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           <note>[Zu Arbeiter]</note> Wer ist HGW XX-7?
         </td>
@@ -3895,7 +3899,7 @@
         <th colspan=2 class="directions">Er sieht einen Bild von Wiesler. Später, er fahrt durch der Stadt. Er sieht Wiesler.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Halt.
         </td>
@@ -3904,7 +3908,7 @@
         <th colspan=2 class="directions">Dreyman geht aus, aber dann geht zurück ins Auto.</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Dreyman</th>
+        <th onclick="quoteClick(this)">Dreyman</th>
         <td>
           Zurück in die Hufeland Straße.
         </td>
@@ -3913,13 +3917,13 @@
         <th colspan=2 class="directions">2 Jahra später. Wiesler sieht einen Buchgeschäft mit das Buch, „Die Sonate vom Guten Menschen“. Er geht darin, und liest den Öffnung des Roman: „HGW XX/7 gewidmet, in Dankbarkeit.“</th>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Geschäftarbeiter</th>
+        <th onclick="quoteClick(this)">Geschäftarbeiter</th>
         <td>
           Geschenkverpackung?
         </td>
       </tr>
       <tr>
-        <th onclick="quoteShow(this)">Wiesler</th>
+        <th onclick="quoteClick(this)">Wiesler</th>
         <td>
           Nein, es ist für mich.
         </td>

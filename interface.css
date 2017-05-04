@@ -7,12 +7,6 @@
   position: fixed !important;
 }
 
-.blurred {
-  text-shadow: 0px 0px 5px black;
-  color: #ffffff00;
-}
-
-
 /* Quote */
 
 #quoteMenu {
@@ -30,10 +24,10 @@
   border-top: 5px solid gray;
 }
 
-#largeQuote .closeinfo {
+#largeQuote .closebutton {
+  font-family: monospace;
   float: right;
-  font-style: italic;
-  font-size: 0.7em;
+  font-size: 5em;
 }
 
 /* Table of Contents */

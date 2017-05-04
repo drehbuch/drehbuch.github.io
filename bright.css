@@ -2,16 +2,19 @@ h1, note, table th {
   color: /* Dark Beige */ rgb(63, 63, 31);
 }
 
-#background, #largeQuote {
+#background {
   background-color: /* Subtle Beige */ rgb(255, 255, 237);
+  border-color: /* Beige */ rgb(127, 127, 63);
 }
 
-#background { border-color: /* Beige */ rgb(127, 127, 63); }
+.blurred {
+  text-shadow: 0px 0px 5px black;
+  color: rgba(0, 0, 0, 0.2)
+}
 
-#largeQuote { border-color: /* Light Beige */ rgb(192, 192, 127); }
-
-#largeQuote .closeinfo {
-  color: /* Light Beige */ rgb(192, 192, 127);
+#largeQuote {
+  background-color: /* Subtle Beige */ rgba(255, 255, 237, 90%);
+  border-color: /* Light Beige */ rgb(192, 192, 127);
 }
 
 table th {

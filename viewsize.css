@@ -1,10 +1,10 @@
-.content, .fixed {
+#content, .fixed {
   margin: auto;
   width: 97%;
 }
 
 @media (max-resolution: 150dpi), (min-width: 1000px) {
-  .content, .fixed {
+  #content, .fixed {
     width: 90%;
     max-width: 50em;
   }

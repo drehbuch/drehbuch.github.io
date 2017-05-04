@@ -22,15 +22,14 @@
   <meta name="theme-color" content="#c0c07f">
 </head>
 <body>
-  <div class='content'>
-    <div class='fixed' id='largeQuote' onclick='largeQuoteHide();'>
-      <h2 class='closeinfo'>(Click anywhere to close)</h2>
-      <h1>It appears the website has not loaded CSS.</h1>
-      <p>Please contact the website maintainer.</p>
-    </div>
+  <div class='fixed' id='largeQuote'>
+    <a class='closebutton' onclick='largeQuoteHide();'>[&times;]</a>
+    <h1>It appears the website has not loaded CSS.</h1>
+    <a>[Display only quotes by this speaker]</a>
+    <p>Please contact the website maintainer.</p>
   </div>
   
-  <div class='content'>
+  <div id='content'>
     <h1 class='clickable' onclick='switchStyle()'><i>„Das Leben der anderen“</i> Drehbuch</h1>
     
     <p class='small'>

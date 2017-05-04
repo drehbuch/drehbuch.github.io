@@ -1,0 +1,59 @@
+/* Font */
+@import url("fantasque/stylesheet.css"); 
+
+body {
+  font-family: 'Fantasque Sans Mono', monospace;
+  margin: 0px;
+  text-align: center;
+}
+
+/* Tag styles*/
+
+a { text-decoration: none; }
+
+a:hover, .clickable:hover, th[onclick]:hover { text-decoration: underline; }
+
+li { text-align: left; }
+
+/* Custom formatting */
+
+note {
+  font-weight: bold;
+  font-style: normal;
+}
+
+p.small {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+place {
+  font-family: 'Cambria', serif;
+  font-variant: small-caps;
+}
+
+/* Table */
+
+table {
+  font-style: italic;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid gray;
+}
+
+table th {
+  /* Directions and Speakers */
+  min-width: 5em;
+  vertical-align: text-top;
+  text-align: right;
+  border-left: 5px solid gray;
+  padding-right: 5px;
+}
+
+table td {
+  /* Quotes */
+  text-align: justify;
+  border: 1px dotted gray;
+  border-left: 3px double gray;
+  padding-left: 5px;
+}

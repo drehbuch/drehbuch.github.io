@@ -2,15 +2,15 @@ h1, note, table th {
   color: /* Dark Beige */ rgb(63, 63, 31);
 }
 
-#background, #largequote {
+#background, #largeQuote {
   background-color: /* Subtle Beige */ rgb(255, 255, 237);
 }
 
 #background { border-color: /* Beige */ rgb(127, 127, 63); }
 
-#largequote { border-color: /* Light Beige */ rgb(192, 192, 127); }
+#largeQuote { border-color: /* Light Beige */ rgb(192, 192, 127); }
 
-#largequote .closeinfo {
+#largeQuote .closeinfo {
   color: /* Light Beige */ rgb(192, 192, 127);
 }
 

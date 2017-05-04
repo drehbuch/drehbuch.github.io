@@ -9,12 +9,6 @@
 
 /* Quote */
 
-#quoteMenu {
-  visibility: hidden;
-  top: 0;
-  z-index: 10;
-}
-
 #largeQuote {
   z-index: 20;
   top: 0;

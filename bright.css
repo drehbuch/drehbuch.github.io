@@ -7,12 +7,19 @@ h1, note, table th {
   border-color: /* Beige */ rgb(127, 127, 63);
 }
 
+@keyframes blurInBlack {
+  from { text-shadow: 0px 0px 0px black; }
+  to { text-shadow: 0px 0px 5px black; }
+}
+
 .blurred {
   text-shadow: 0px 0px 5px black;
-  color: rgba(0, 0, 0, 0.2)
+  color: rgba(0, 0, 0, 0.2);
+  animation: blurInBlack 0.5s ease-in-out;
 }
 
 #largeQuote {
+  background-color: /* Subtle Beige */ rgb(255, 255, 237);
   background-color: /* Subtle Beige */ rgba(255, 255, 237, 90%);
   border-color: /* Light Beige */ rgb(192, 192, 127);
 }

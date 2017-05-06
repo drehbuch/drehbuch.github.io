@@ -72,4 +72,5 @@
   border-right: none;
   z-index: -1;
   opacity: 0;
+  transition: opacity 0.2s;
 }

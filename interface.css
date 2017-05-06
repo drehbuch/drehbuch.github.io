@@ -24,6 +24,19 @@
   font-size: 5em;
 }
 
+/* Style changer */
+
+#title .tooltip {
+  opacity: 0;
+  transition: opacity 0.5s;
+  transition: font-size 0.5s;
+  font-size: 0px;
+}
+
+#title:hover .tooltip {
+  opacity: 1;
+  font-size: .4em;
+}
 
 * {
   transition: color 2s ease-in-out;

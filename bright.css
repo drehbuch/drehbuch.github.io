@@ -7,17 +7,6 @@ h1, note, table th {
   border-color: /* Beige */ rgb(127, 127, 63);
 }
 
-@keyframes blurInBlack {
-  from { text-shadow: 0px 0px 0px black; }
-  to { text-shadow: 0px 0px 5px black; }
-}
-
-.blurred {
-  text-shadow: 0px 0px 5px black;
-  color: rgba(0, 0, 0, 0.2);
-  animation: blurInBlack 0.5s ease-in-out;
-}
-
 #largeQuote {
   background-color: /* Subtle Beige */ rgb(255, 255, 237);
   background-color: /* Subtle Beige */ rgba(255, 255, 237, 90%);
@@ -33,3 +22,31 @@ table th.directions {
   background-color: white;
 }
 
+@keyframes blurInBlack {
+  from { text-shadow: 0px 0px 0px black; }
+  to { text-shadow: 0px 0px 5px black; }
+}
+
+.blurred {
+  text-shadow: 0px 0px 5px black;
+  color: rgba(0, 0, 0, 0.2);
+  animation: blurInBlack 0.5s ease-in-out;
+}
+
+/* Fancy blur animation */
+
+@keyframes anderen {
+  from {
+    text-shadow: 0 0 0px rgb(63, 63, 31);
+  } to {
+    text-shadow: 0 0 3px rgb(63, 63, 31);
+  }
+}
+#anderen {
+  color: rgba(0,0,0,0);
+  text-shadow: 0 0 3px rgb(63, 63, 31);
+  animation: anderen 20s ease-in-out 0s;
+}
+#anderenline {
+  border-top: 4px solid rgb(63, 63, 31);
+}

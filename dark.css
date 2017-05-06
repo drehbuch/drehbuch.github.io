@@ -22,6 +22,16 @@ table th {
   background-color: rgb(63, 75, 78);
 }
 
+#largeQuote {
+  background-color: rgb(63, 75, 78);
+  background-color: rgba(63, 75, 78, 90%);
+  border-top-color: rgb(192, 127, 127);
+}
+
+.closebutton {
+  color: rgb(192, 127, 127);
+}
+
 @keyframes blurInWhite {
   from { text-shadow: 0px 0px 0px white; }
   to { text-shadow: 0px 0px 5px white; }
@@ -33,12 +43,18 @@ table th {
   animation: blurInWhite 0.5s ease-in-out;
 }
 
-#largeQuote {
-  background-color: rgb(63, 75, 78);
-  background-color: rgba(63, 75, 78, 90%);
-  border-top-color: rgb(192, 127, 127);
+@keyframes anderen {
+  from {
+    text-shadow: 0 0 0px rgb(147, 199, 99);
+  } to {
+    text-shadow: 0 0 3px rgb(147, 199, 99);
+  }
 }
-
-.closebutton {
-  color: rgb(192, 127, 127);
+#anderen {
+  color: rgba(0,0,0,0);
+  text-shadow: 0 0 3px rgb(147, 199, 99);
+  animation: anderen 20s ease-in-out 0s;
+}
+#anderenline {
+  border-top: 4px solid rgb(147, 199, 99);
 }

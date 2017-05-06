@@ -21,6 +21,8 @@ note {
   font-weight: bold;
   font-style: normal;
 }
+note::before, .small::before{ content: "[" }
+note::after, .small:after   { content: "]" }
 
 p.small {
   font-style: italic;

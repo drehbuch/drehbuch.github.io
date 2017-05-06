@@ -50,11 +50,18 @@ table th {
     text-shadow: 0 0 3px rgb(147, 199, 99);
   }
 }
+
 #anderen {
   color: rgba(0,0,0,0);
   text-shadow: 0 0 3px rgb(147, 199, 99);
   animation: anderen 20s ease-in-out 0s;
+  transition: text-shadow 2s ease-in-out;
 }
+
+#anderen:hover {
+  text-shadow: 0 0 0px rgb(147, 199, 99);
+}
+
 #anderenline {
   border-top: 4px solid rgb(147, 199, 99);
 }

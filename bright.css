@@ -42,11 +42,18 @@ table th.directions {
     text-shadow: 0 0 3px rgb(63, 63, 31);
   }
 }
+
 #anderen {
   color: rgba(0,0,0,0);
   text-shadow: 0 0 3px rgb(63, 63, 31);
   animation: anderen 20s ease-in-out 0s;
+  transition: text-shadow 2s ease-in-out;
 }
+
+#anderen:hover {
+  text-shadow: 0 0 0px rgb(63, 63, 31);
+}
+
 #anderenline {
   border-top: 4px solid rgb(63, 63, 31);
 }

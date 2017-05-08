@@ -27,20 +27,17 @@
 /* Style changer */
 
 #title .tooltip {
-  opacity: 0;
-  transition: opacity 0.5s;
   transition: font-size 0.5s;
-  font-size: 0px;
+  font-size: 0;
 }
 
 #title:hover .tooltip {
-  opacity: 1;
   font-size: .4em;
 }
 
 * {
-  transition: color 2s ease-in-out;
-  transition: background-color 2s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  transition-property: color, background-color, border-color;
 }
 
 /* Table of Contents */
@@ -73,4 +70,24 @@
   z-index: -1;
   opacity: 0;
   transition: opacity 0.2s;
+}
+
+/* „anderen“ strikethrough effect */
+
+#anderen {
+  position: relative;
+}
+
+@keyframes anderenline {
+  0%   { width: 0%;}
+  100% { width: 100%;}
+}
+#anderenline {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0%;
+  border-top: 4px solid black;
+  animation: anderenline 10s linear 3s forwards;
 }

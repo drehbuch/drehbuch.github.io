@@ -34,28 +34,6 @@ place {
   font-variant: small-caps;
 }
 
-/* „anderen“ blur & strikethrough */
-
-#anderen {
-  position: relative;
-  /* Invidiual colour styles must blur text */
-}
-
-@keyframes anderenline {
-  0%   { width: 0%; }
-  60%  { width: 0%; }
-  62%  { width: 100%; }
-}
-#anderenline {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  border-top: 4px solid black;
-  animation: anderenline 20s linear;
-}
-
 /* Table */
 
 table {

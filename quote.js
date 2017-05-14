@@ -4,6 +4,8 @@ window.onload = function(){
   document.getElementById('instructions').classList.remove('hidden')
   contentBox = document.getElementById('content');
   largeQuote = document.getElementById('largeQuote');
+  /* Signal to CSS that we have JS (for onclick hinting) */
+  contentBox.classList.add('js')
   
   var rows = document.getElementsByTagName("tr")
   for( i = 0; i < rows.length; i++ ){

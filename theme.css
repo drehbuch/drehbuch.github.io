@@ -40,7 +40,7 @@ table th {
 .highlighted th { background-color: var(--highlighted); }
 .highlighted td { color: var(--accent); }
 
-.highlighted td, td:hover { background-color: var(--subtle); }
+.highlighted td, .js td:hover { background-color: var(--subtle); }
 th.directions { background-color: var(--background); }
 
 @keyframes blur {

@@ -6,7 +6,6 @@
   
   --border: gray;
   --subtle: white;
-  --subtle-bg: rgba(255, 255, 255, 90%);
   
   --speaker: white;
   --highlighted: white;
@@ -21,8 +20,8 @@ h1, note, table th { color: var(--accent); }
 }
 
 #largeQuote {
+  opacity: 0.9;
   background-color: var(--subtle);
-  background-color: var(--subtle-bg);
   border-color: var(--lqAccent);
 }
 

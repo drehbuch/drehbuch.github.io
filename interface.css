@@ -9,6 +9,11 @@
   position: fixed !important;
 }
 
+body, th, td, note, a {
+  transition: all 0.5s ease-in-out;
+  transition-property: color, background-color, border-color;
+}
+
 /* Quote */
 
 #largeQuote {
@@ -24,19 +29,6 @@
   font-family: monospace;
   float: right;
   font-size: 5em;
-}
-
-/* Style changer */
-
-#title .tooltip {
-  position: relative;
-  top: -10px;
-  font-size: .4em;
-}
-
-body, th, td, note, a {
-  transition: all 0.5s ease-in-out;
-  transition-property: color, background-color, border-color;
 }
 
 /* Table of Contents */

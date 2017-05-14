@@ -11,7 +11,7 @@
   --highlighted: rgb(105, 137, 89);
 }
 
-[theme=obsidian] { font-weight: bold; }
+[theme=obsidian] { font-style: italic; font-weight: bold; color: var(--accent); }
 
 a { color: rgb(103, 140, 177); }
 a:visited { color: rgb(160, 130, 189); }

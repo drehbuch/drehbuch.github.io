@@ -11,4 +11,4 @@
   --highlighted: rgb(192, 159, 127);
 }
 
-[theme=bericht] { font-weight: bold; color: var(--accent);}
+[theme=bericht] { font-style: italic; font-weight: bold; color: var(--accent); }

@@ -14,6 +14,11 @@ body, th, td, note, a, h1, span {
   transition-property: color, background-color, border-color;
 }
 
+#searchbar {
+  width: 80%;
+  font-size: 1.1em;
+}
+
 /* Quote */
 
 #largeQuote {

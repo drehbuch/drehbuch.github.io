@@ -53,12 +53,13 @@
         <a theme='apfel' onclick="changeTheme('apfel')">Apfel</a> /
         <a theme='kirsche' onclick="changeTheme('kirsche')">Kirsche</a>
       </p>
-      <h2>Viewing instructions</h2>
       <ul>
-        <li>Use Ctrl-F / ⌘F / your mobile browser's <i>'find…'</i> function to find a quote.</li>
         <li>Click a speaker's name to highlight it throughout the script.</li>
         <li>Click the line to see the quote in full-screen.</li>
       </ul>
+      <input id='searchbar' autocomplete='off' type='text' placeholder="Find quote…"/>
+      <input type='button' value='Find' onclick='findQuote()'/>
+      
     </span>    
     <noscript>
       <p>Your Javascript is disabled. Enable it for certain interface functions.</p>

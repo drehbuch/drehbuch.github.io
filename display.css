@@ -1,11 +1,12 @@
 /* Font */
 @import url("fantasque/stylesheet.css"); 
 
-body {
+body, input {
   font-family: 'Fantasque Sans Mono', monospace;
   margin: 0px;
   text-align: center;
 }
+input { font-size: 1.1em; }
 
 /* Tag styles*/
 

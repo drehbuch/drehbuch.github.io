@@ -19,7 +19,7 @@ window.onload = function(){
 }
 
 thOnclick = function(/* th */){
-  var speaker = this.parentElement.classList.contains("highlighted") ? "" : this.innerText
+  var speaker = this.parentElement.classList.contains("highlighted") ? undefined : this.innerText
   quoteHighlight(speaker);
 }
 
@@ -37,11 +37,44 @@ function Line(tr) {
   }
 }
 
-function quoteHighlight(speaker) {
+function neutralise(string){
+  return string.toLowerCase().replace('ä','a').replace('ö','o').replace('ü','u').replace('ß','s')
+}
+
+function findQuote() {
+  var request = neutralise(document.getElementById('searchbar').value),
+      firstFound = quoteHighlight( request.length > 1 ?
+    ((line) => neutralise(line.quote).indexOf(request) !== -1 ) : undefined );
+  if( firstFound ){ window.scrollTo(0, firstFound.tr.offsetTop); }
+}
+
+function quoteHighlight(selector) {
+  switch( typeof selector ){
+    case "string":
+      condition = (line) => selector == line.speaker;
+      break;
+    case "boolean":
+      condition = (line) => selector;
+      break;
+    case "function":
+      condition = selector;
+      break;
+    default:
+      condition = (line) => false;
+      break;
+  }
+  
+  var firstLine;
   for( i = 0; i < lines.length; i++ ){
     var line = lines[i], c = line.tr.classList;
-    line.speaker == speaker ? c.add('highlighted') : c.remove('highlighted');
+    if( condition(line) ){
+      c.add('highlighted')
+      if( firstLine == undefined ){ firstLine = line; }
+    } else {
+      c.remove('highlighted')
+    }
   }
+  return firstLine;
 }
 
 function largeQuoteHide() {

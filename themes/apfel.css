@@ -9,7 +9,6 @@
   --background: rgb(41, 49, 52);
   
   --speaker: rgb(66, 79, 64);
-  --highlighted: rgb(88, 106, 85);
 }
 
 [theme=apfel] { font-style: italic; font-weight: bold; color: var(--accent); }

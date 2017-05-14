@@ -9,7 +9,6 @@
   --background: white;
   
   --speaker: rgb(192, 192, 127);
-  --highlighted: rgb(192, 159, 127);
 }
 
 [theme=bericht] { font-style: italic; font-weight: bold; color: var(--accent); }

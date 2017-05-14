@@ -25,7 +25,7 @@ table th {
   border-left-color: var(--border);
 }
 
-.highlighted th { background-color: var(--highlighted); }
+.highlighted th { background-color: var(--border); }
 .highlighted td { color: var(--accent); }
 
 .highlighted td, .js td:hover { background-color: var(--subtle); }

@@ -9,7 +9,7 @@
   position: fixed !important;
 }
 
-body, th, td, note, a {
+body, th, td, note, a, h1, span {
   transition: all 0.5s ease-in-out;
   transition-property: color, background-color, border-color;
 }

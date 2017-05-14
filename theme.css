@@ -22,10 +22,10 @@ h1, note, table th { color: var(--accent); }
 #largeQuote {
   opacity: 0.9;
   background-color: var(--subtle);
-  border-color: var(--lqAccent);
+  border-color: var(--lqBorder);
 }
 
-.closebutton { color: var(--lqAccent); }
+.closebutton { color: var(--lqBorder); }
 
 body {
   color: var(--text);

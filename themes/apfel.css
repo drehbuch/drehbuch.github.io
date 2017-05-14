@@ -1,0 +1,15 @@
+:root{
+  --text: rgb(224, 226, 228);
+  --link: rgb(103, 140, 177);
+  --accent: rgb(147, 199, 99);
+  
+  --lqBorder: rgb(192, 127, 127);
+  --border: gray;
+  --subtle: rgb(63, 75, 78);
+  --background: rgb(41, 49, 52);
+  
+  --speaker: rgb(66, 79, 64);
+  --highlighted: rgb(88, 106, 85);
+}
+
+[theme=apfel] { font-style: italic; font-weight: bold; color: var(--accent); }

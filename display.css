@@ -46,16 +46,19 @@ table {
 }
 
 table th {
-  /* Directions and Speakers */
   min-width: 5em;
   vertical-align: text-top;
   text-align: right;
   border-left: 5px solid gray;
   padding-right: 5px;
+  font-weight: normal;
+}
+
+.highlighted th, th.directions {
+  font-weight: bold;
 }
 
 table td {
-  /* Quotes */
   text-align: justify;
   border: 1px dotted gray;
   border-left: 3px double gray;

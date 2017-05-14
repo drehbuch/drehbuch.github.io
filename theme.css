@@ -20,11 +20,9 @@ body {
   background-color: var(--background);
 }
 
-table th {
-  background-color: var(--speaker);
-  border-left-color: var(--border);
-}
+th { background-color: var(--speaker); }
 
+table, table th, td { border-color: var(--border); }
 .highlighted th { background-color: var(--border); }
 .highlighted td { color: var(--accent); }
 

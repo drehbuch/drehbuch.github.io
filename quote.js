@@ -9,12 +9,15 @@ window.onload = function(){
     var line = new Line(rows[i]);
     if( line.isQuote ){
       lines.push(line);
-      line.th.onclick = largeQuoteShow;
-      line.th.onmouseover = quoteOver;
-      line.th.onmouseout = quoteHighlight;
+      line.td.onclick = largeQuoteShow;
+      line.th.onclick = thOnclick;
+      line.tr.onmouseover = trMouseover;
     }    
   }
 }
+
+thOnclick = function(){ quoteHighlight(currentLine.speaker); }
+trMouseover = function(){ currentLine = new Line(this); }
 
 function Line(tr) {
   this.tr = tr;
@@ -30,11 +33,6 @@ function Line(tr) {
   }
 }
 
-
-function quoteOver() {
-  currentLine = new Line(this.parentElement);
-  quoteHighlight(currentLine.speaker)
-}
 
 function quoteHighlight(speaker) {
   for( i = 0; i < lines.length; i++ ){

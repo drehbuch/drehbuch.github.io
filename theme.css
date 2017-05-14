@@ -9,7 +9,6 @@
   --subtle-bg: rgba(255, 255, 255, 90%);
   
   --speaker: white;
-  --similar: white;
   --highlighted: white;
 }
 
@@ -39,9 +38,8 @@ table th {
   border-left-color: var(--border);
 }
 
-.highlighted th { background-color: var(--similar); }
-.highlighted th:hover { background-color: var(--highlighted); }
-.highlighted td { background-color: var(--subtle); }
+.highlighted th { background-color: var(--highlighted); }
+.highlighted td, td:hover { background-color: var(--subtle); }
 
 th.directions { background-color: var(--background); }
 

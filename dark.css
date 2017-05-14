@@ -1,13 +1,14 @@
 :root{
   --text: rgb(224, 226, 228);
+  --background: rgb(41, 49, 52);
   --accent: rgb(147, 199, 99);
   --lqAccent: rgb(192, 127, 127);
+  
   --border: gray;
-  --speaker: rgb(63, 75, 78);
   --subtle: rgb(63, 75, 78);
   --subtle-bg: rgba(63, 75, 78, 90%);
-  --background: rgb(41, 49, 52);
   
+  --speaker: rgb(63, 75, 78);
   --similar: rgb(84, 106, 83);
   --highlighted: rgb(105, 137, 89);
 }

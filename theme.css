@@ -1,13 +1,14 @@
 :root{
   --text: black;
+  --background: white;
   --accent: black;
   --lqAccent: gray;
+  
   --border: gray;
-  --speaker: white;
   --subtle: white;
   --subtle-bg: rgba(255, 255, 255, 90%);
-  --background: white;
   
+  --speaker: white;
   --similar: white;
   --highlighted: white;
 }

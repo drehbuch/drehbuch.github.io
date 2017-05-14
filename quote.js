@@ -1,4 +1,4 @@
-var contentBox, largeQuote, lines = [], currentLine;
+var contentBox, largeQuote, lines = [];
 
 window.onload = function(){
   contentBox = document.getElementById('content');
@@ -33,7 +33,6 @@ function Line(tr) {
     this.quote = this.th.innerText;
   }
 }
-
 
 function quoteHighlight(speaker) {
   for( i = 0; i < lines.length; i++ ){

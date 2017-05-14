@@ -1,8 +1,9 @@
 :root{
   --text: black;
-  --dark: rgb(63, 63, 31);
-  --regular: rgb(127, 127, 63);
-  --light: rgb(192, 192, 127);
+  --accent: rgb(63, 63, 31);
+  --lqAccent: rgb(192, 192, 127);
+  --border: rgb(127, 127, 63);
+  --speaker: rgb(192, 192, 127);
   --subtle: rgb(255, 255, 237);
   --subtle-bg: rgba(255, 255, 237, 90%);
   --background: white;

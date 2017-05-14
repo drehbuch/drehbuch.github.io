@@ -1,8 +1,9 @@
 :root{
   --text: rgb(224, 226, 228);
-  --dark: rgb(147, 199, 99);
-  --regular: gray;
-  --light: rgb(63, 75, 78);
+  --accent: rgb(147, 199, 99);
+  --lqAccent: rgb(192, 127, 127);
+  --border: gray;
+  --speaker: rgb(63, 75, 78);
   --subtle: rgb(63, 75, 78);
   --subtle-bg: rgba(63, 75, 78, 90%);
   --background: rgb(41, 49, 52);
@@ -10,7 +11,3 @@
 
 a { color: rgb(103, 140, 177); }
 a:visited { color: rgb(160, 130, 189); }
-
-#largeQuote { border-top-color: rgb(192, 127, 127); }
-
-.closebutton { color: rgb(192, 127, 127); }

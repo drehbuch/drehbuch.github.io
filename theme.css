@@ -1,26 +1,29 @@
 :root{
   --text: black;
-  --dark: black;
-  --regular: gray;
-  --light: white;
+  --accent: black;
+  --lqAccent: gray;
+  --border: gray;
+  --speaker: white;
   --subtle: white;
   --subtle-bg: rgba(255, 255, 255, 90%);
   --background: white;
 }
 
-h1, note, table th { color: var(--dark); }
-#anderenline { border-top-color: var(--dark); }
+h1, note, table th { color: var(--accent); }
+#anderenline { border-top-color: var(--accent); }
 
 #background {
   background-color: var(--subtle);
-  border-color: var(--regular);
+  border-color: var(--border);
 }
 
 #largeQuote {
   background-color: var(--subtle);
   background-color: var(--subtle-bg);
-  border-color: var(--light);
+  border-color: var(--lqAccent);
 }
+
+.closebutton { color: var(--lqAccent); }
 
 body {
   color: var(--text);
@@ -28,8 +31,8 @@ body {
 }
 
 table th {
-  background-color: var(--light);
-  border-left-color: var(--regular);
+  background-color: var(--speaker);
+  border-left-color: var(--border);
 }
 /*
 th.highlighted { background-color: var(--similar); }

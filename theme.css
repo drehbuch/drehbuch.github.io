@@ -38,17 +38,19 @@ table th {
 }
 
 .highlighted th { background-color: var(--highlighted); }
-.highlighted td, td:hover { background-color: var(--subtle); }
+.highlighted td { color: var(--accent); }
 
+.highlighted td, td:hover { background-color: var(--subtle); }
 th.directions { background-color: var(--background); }
 
-@keyframes blurIn {
-  from { text-shadow: 0px 0px 0px var(--text); }
-  to { text-shadow: 0px 0px 5px var(--text); }
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 0px var(--text);
+    color: var(--text);
+  } to {
+    text-shadow: 0px 0px 5px var(--text);
+    color: rgba(0, 0, 0, 0);
+    }
 }
 
-.blurred {
-  text-shadow: 0px 0px 5px var(--text);
-  color: rgba(0, 0, 0, 0.2);
-  animation: blurIn 0.5s ease-in-out;
-}
+.blurred { animation: blur 1s 0s ease-in-out normal forwards; }

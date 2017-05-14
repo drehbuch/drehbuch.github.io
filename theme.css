@@ -12,7 +12,8 @@ h1, note, table th { color: var(--accent); }
   border-color: var(--lqBorder);
 }
 
-.closebutton { color: var(--lqBorder); }
+a, a:hover { color: var(--link); }
+.closebutton, .closebutton:hover { color: var(--lqBorder); }
 
 body {
   color: var(--text);

@@ -5,10 +5,10 @@
   
   --lqBorder: white;
   --border: gray; /* 128 */
-  --subtle: lightgray; /* 211 */
+  --subtle: whitesmoke; /* 245 */
   --background: white;
   
-  --speaker: whitesmoke; /* 245 */
+  --speaker: lightgray; /* 211 */
 }
 
 [theme=weiss] { font-style: italic; font-weight: bold; color: var(--accent); }

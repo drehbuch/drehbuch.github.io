@@ -11,7 +11,7 @@ body {
 
 a { text-decoration: none; }
 
-a:hover, .clickable:hover, th:not(.directions):hover {
+a:hover, th:not(.directions):hover {
   text-decoration: underline;
 }
 

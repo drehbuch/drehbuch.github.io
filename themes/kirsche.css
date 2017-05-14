@@ -1,0 +1,14 @@
+:root{
+  --text: rgb(224, 226, 228);
+  --link: rgb(103, 140, 177);
+  --accent: rgb(199, 99, 165);
+  
+  --lqBorder: rgb(127, 192, 141);
+  --border: rgb(138, 93, 123);
+  --subtle: rgb(63, 75, 78);
+  --background: rgb(41, 49, 52);
+  
+  --speaker: rgb(79, 64, 74);
+}
+
+[theme=kirsche] { font-style: italic; font-weight: bold; color: var(--accent); }

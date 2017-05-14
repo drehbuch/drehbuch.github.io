@@ -1,0 +1,39 @@
+h1, note, table th { color: var(--dark); }
+#anderenline { border-top-color: var(--dark); }
+
+#background {
+  background-color: var(--subtle);
+  border-color: var(--regular);
+}
+
+#largeQuote {
+  background-color: var(--subtle);
+  background-color: var(--subtle-bg);
+  border-color: var(--light);
+}
+
+body {
+  color: var(--text);
+  background-color: var(--background);
+}
+
+table th {
+  background-color: var(--light);
+  border-left-color: var(--regular);
+}
+/*
+th.highlighted { background-color: var(--similar); }
+th.highlighted:hover { background-color: var(--highlighted); }
+*/
+th.directions { background-color: var(--background); }
+
+@keyframes blurIn {
+  from { text-shadow: 0px 0px 0px var(--text); }
+  to { text-shadow: 0px 0px 5px var(--text); }
+}
+
+.blurred {
+  text-shadow: 0px 0px 5px var(--text);
+  color: rgba(0, 0, 0, 0.2);
+  animation: blurIn 0.5s ease-in-out;
+}

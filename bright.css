@@ -1,38 +1,9 @@
-h1, note, table th {
-  color: /* Dark Beige */ rgb(63, 63, 31);
-}
-
-#background {
-  background-color: /* Subtle Beige */ rgb(255, 255, 237);
-  border-color: /* Beige */ rgb(127, 127, 63);
-}
-
-#largeQuote {
-  background-color: /* Subtle Beige */ rgb(255, 255, 237);
-  background-color: /* Subtle Beige */ rgba(255, 255, 237, 90%);
-  border-color: /* Light Beige */ rgb(192, 192, 127);
-}
-
-table th {
-  background-color: /* Light Beige */ rgb(192, 192, 127);
-  border-left-color: /* Beige */ rgb(127, 127, 63);
-}
-
-table th.directions {
-  background-color: white;
-}
-
-@keyframes blurInBlack {
-  from { text-shadow: 0px 0px 0px black; }
-  to { text-shadow: 0px 0px 5px black; }
-}
-
-.blurred {
-  text-shadow: 0px 0px 5px black;
-  color: rgba(0, 0, 0, 0.2);
-  animation: blurInBlack 0.5s ease-in-out;
-}
-
-#anderenline {
-  border-top: 4px solid rgb(63, 63, 31);
+:root{
+  --text: black;
+  --dark: rgb(63, 63, 31);
+  --regular: rgb(127, 127, 63);
+  --light: rgb(192, 192, 127);
+  --subtle: rgb(255, 255, 237);
+  --subtle-bg: rgba(255, 255, 237, 90%);
+  --background: white;
 }

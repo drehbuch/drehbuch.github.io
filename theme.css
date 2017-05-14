@@ -1,16 +1,3 @@
-:root{
-  --text: black;
-  --background: white;
-  --accent: black;
-  --lqAccent: gray;
-  
-  --border: gray;
-  --subtle: white;
-  
-  --speaker: white;
-  --highlighted: white;
-}
-
 h1, note, table th { color: var(--accent); }
 #anderenline { border-top-color: var(--accent); }
 

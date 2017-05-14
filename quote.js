@@ -1,6 +1,7 @@
 var contentBox, largeQuote, lines = [];
 
 window.onload = function(){
+  document.getElementById('instructions').classList.remove('hidden')
   contentBox = document.getElementById('content');
   largeQuote = document.getElementById('largeQuote');
   
@@ -42,8 +43,8 @@ function quoteHighlight(speaker) {
 }
 
 function largeQuoteHide() {
-  largeQuote.style.visibility = 'hidden';
-  contentBox.classList.remove('blurred')
+  largeQuote.classList.add('hidden');
+  contentBox.classList.remove('blurred');
 }
 
 function largeQuoteShow(/* td */) {
@@ -53,8 +54,8 @@ function largeQuoteShow(/* td */) {
   
   largeSpeaker.innerHTML = currentLine.speaker;
   largeText.innerHTML = currentLine.td.innerHTML;
-  largeQuote.style.visibility = 'visible';
-  contentBox.classList.add('blurred')
+  largeQuote.classList.remove('hidden');
+  contentBox.classList.add('blurred');
   
   /* Size text based on length */
   height = 150 / Math.log(largeText.innerHTML.length / 5);

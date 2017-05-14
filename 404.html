@@ -27,7 +27,7 @@
   <meta name="theme-color" content="#c0c07f">
 </head>
 <body>
-  <div class='fixed' id='largeQuote'>
+  <div class="fixed hidden" id='largeQuote'>
     <a class='closebutton' onclick='largeQuoteHide();'>[&times;]</a>
     <h1>It appears the website has not loaded CSS.</h1>
     <p>Please contact the website maintainer.</p>
@@ -44,17 +44,17 @@
       Website source available on <a href="http://github.com/drehbuch/drehbuch.github.io/" alt="drehbuch github">Github</a>
     </p>
     
-    <h2>Viewing instructions</h2>
-    <ul>
-      <li>Use Ctrl-F / ⌘F / your mobile browser's <i>'find…'</i> function to find a quote.</li>
-<noscript>
-    </ul>
-    <p class='small'>You can't use the following features as your Javascript is disabled.</p>
-    <ul>
-</noscript>
-      <li>Click a speaker's name to highlight it throughout the script.</li>
-      <li>Click the line to see the quote in full-screen.</li>
-    </ul>
+    <span id='instructions' class='hidden'>
+      <h2>Viewing instructions</h2>
+      <ul>
+        <li>Use Ctrl-F / ⌘F / your mobile browser's <i>'find…'</i> function to find a quote.</li>
+        <li>Click a speaker's name to highlight it throughout the script.</li>
+        <li>Click the line to see the quote in full-screen.</li>
+      </ul>
+    </span>    
+    <noscript>
+      <p>Your Javascript is disabled. Enable it for certain interface functions.</p>
+    </noscript>
     
     <h2>Table of Contents</h2>
     

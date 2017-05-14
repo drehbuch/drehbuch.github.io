@@ -21,11 +21,7 @@ String.prototype.endsWith = function(suffix) {
     return this.indexOf(suffix, this.length - suffix.length) !== -1;
 };
 
-function switchStyle() {
+function changeTheme(theme) {
   var styler = document.getElementById('styler');
-  if( styler.href.endsWith('bright.css') ){
-    styler.href = 'dark.css';
-  } else {
-    styler.href = 'bright.css';
-  }
+  styler.href = 'themes/' + theme + '.css';
 }

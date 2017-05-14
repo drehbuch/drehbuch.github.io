@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="interface.css"/>
   <link rel="stylesheet" href="viewsize.css"/>
   <link rel="stylesheet" href="theme.css"/>
-  <link rel="stylesheet" id="styler" href="bright.css"/>
+  <link rel="stylesheet" id="styler" href="themes/bericht.css"/>
   
   <script src="interface.js"></script>
   <script src="quote.js"></script>
@@ -44,6 +44,11 @@
     </p>
     
     <span id='instructions' class='hidden'>
+      <h2>Themes</h2>
+      <p id='themeSelect'>
+        <a theme='bericht' onclick="changeTheme('bericht')">Bericht</a> /
+        <a theme='obsidian' onclick="changeTheme('obsidian')">Obsidian</a>
+      </p>
       <h2>Viewing instructions</h2>
       <ul>
         <li>Use Ctrl-F / ⌘F / your mobile browser's <i>'find…'</i> function to find a quote.</li>

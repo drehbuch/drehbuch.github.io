@@ -45,7 +45,7 @@ function findQuote() {
   var request = neutralise(document.getElementById('searchbar').value),
       firstFound = quoteHighlight( request.length > 1 ?
     ((line) => neutralise(line.quote).indexOf(request) !== -1 ) : undefined );
-  if( firstFound ){ window.scrollTo(0, firstFound.tr.offsetTop); }
+  if( firstFound ){ firstFound.tr.scrollIntoView({block: "end", behavior: "smooth"}); }
 }
 
 function quoteHighlight(selector) {

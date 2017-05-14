@@ -11,6 +11,7 @@ window.onload = function(){
       lines.push(line);
       line.th.onclick = largeQuoteShow;
       line.th.onmouseover = quoteOver;
+      line.th.onmouseout = quoteHighlight;
     }    
   }
 }
@@ -32,6 +33,14 @@ function Line(tr) {
 
 function quoteOver() {
   currentLine = new Line(this.parentElement);
+  quoteHighlight(currentLine.speaker)
+}
+
+function quoteHighlight(speaker) {
+  for( i = 0; i < lines.length; i++ ){
+    var line = lines[i], c = line.tr.classList;
+    line.speaker == speaker ? c.add('highlighted') : c.remove('highlighted');
+  }
 }
 
 function largeQuoteHide() {

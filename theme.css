@@ -7,6 +7,9 @@
   --subtle: white;
   --subtle-bg: rgba(255, 255, 255, 90%);
   --background: white;
+  
+  --similar: white;
+  --highlighted: white;
 }
 
 h1, note, table th { color: var(--accent); }
@@ -34,10 +37,11 @@ table th {
   background-color: var(--speaker);
   border-left-color: var(--border);
 }
-/*
-th.highlighted { background-color: var(--similar); }
-th.highlighted:hover { background-color: var(--highlighted); }
-*/
+
+.highlighted th { background-color: var(--similar); }
+.highlighted th:hover { background-color: var(--highlighted); }
+.highlighted td { background-color: var(--subtle); }
+
 th.directions { background-color: var(--background); }
 
 @keyframes blurIn {

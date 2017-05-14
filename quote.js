@@ -11,13 +11,14 @@ window.onload = function(){
       lines.push(line);
       line.td.onclick = largeQuoteShow;
       line.th.onclick = thOnclick;
-      line.tr.onmouseover = trMouseover;
     }    
   }
 }
 
-thOnclick = function(){ quoteHighlight(currentLine.speaker); }
-trMouseover = function(){ currentLine = new Line(this); }
+thOnclick = function(/* th */){
+  var speaker = this.parentElement.classList.contains("highlighted") ? "" : this.innerText
+  quoteHighlight(speaker);
+}
 
 function Line(tr) {
   this.tr = tr;
@@ -46,14 +47,15 @@ function largeQuoteHide() {
   contentBox.classList.remove('blurred')
 }
 
-function largeQuoteShow() {
-  contentBox.classList.add('blurred')
+function largeQuoteShow(/* td */) {
+  var currentLine = new Line(this.parentElement);
   var largeSpeaker = largeQuote.getElementsByTagName('h1')[0];
   var largeText = largeQuote.getElementsByTagName('p')[0];
   
   largeSpeaker.innerHTML = currentLine.speaker;
   largeText.innerHTML = currentLine.td.innerHTML;
   largeQuote.style.visibility = 'visible';
+  contentBox.classList.add('blurred')
   
   /* Size text based on length */
   height = 150 / Math.log(largeText.innerHTML.length / 5);

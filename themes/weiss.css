@@ -1,14 +1,14 @@
 :root{
   --text: black;
-  --link: gray;
+  --link: dimgray; /* 105 */
   --accent: black;
   
   --lqBorder: white;
-  --border: gray;
-  --subtle: lightgray;
+  --border: gray; /* 128 */
+  --subtle: lightgray; /* 211 */
   --background: white;
   
-  --speaker: whitesmoke;
+  --speaker: whitesmoke; /* 245 */
 }
 
 [theme=weiss] { font-style: italic; font-weight: bold; color: var(--accent); }

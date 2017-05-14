@@ -1,3 +1,13 @@
+:root{
+  --text: black;
+  --dark: black;
+  --regular: gray;
+  --light: white;
+  --subtle: white;
+  --subtle-bg: rgba(255, 255, 255, 90%);
+  --background: white;
+}
+
 h1, note, table th { color: var(--dark); }
 #anderenline { border-top-color: var(--dark); }
 

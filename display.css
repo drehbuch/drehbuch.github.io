@@ -11,7 +11,7 @@ body {
 
 a { text-decoration: none; }
 
-a:hover, .clickable:hover, .highlighted th:hover {
+a:hover, .clickable:hover, th:not(.directions):hover {
   text-decoration: underline;
 }
 
@@ -23,8 +23,8 @@ note {
   font-weight: bold;
   font-style: normal;
 }
-note::before, .small::before{ content: "[" }
-note::after, .small:after   { content: "]" }
+note::before, .small::before { content: "[" }
+note::after,  .small::after  { content: "]" }
 
 p.small {
   font-style: italic;

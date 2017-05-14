@@ -8,7 +8,7 @@
   --subtle: rgb(63, 75, 78);
   
   --speaker: rgb(63, 75, 78);
-  --highlighted: rgb(105, 137, 89);
+  --highlighted: rgb(88, 106, 85);
 }
 
 [theme=obsidian] { font-style: italic; font-weight: bold; color: var(--accent); }

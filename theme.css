@@ -1,39 +1,78 @@
-h1, note, table th { color: var(--accent); }
-#anderenline { border-top-color: var(--accent); }
+h1, note, table th {
+  color: rgb(63, 63, 31);
+  color: var(--accent);
+}
+#anderenline {
+  border-top-color: rgb(63, 63, 31);
+  border-top-color: var(--accent);
+}
 
 #background {
+  background-color: rgb(255, 255, 237);
   background-color: var(--subtle);
+  border-color: rgb(127, 127, 63);
   border-color: var(--border);
 }
 
 #largeQuote {
   opacity: 0.9;
+  background-color: rgb(255, 255, 237);
   background-color: var(--subtle);
+  border-color: rgb(192, 192, 127);
   border-color: var(--lqBorder);
 }
 
-a, a:hover { color: var(--link); }
-.closebutton, .closebutton:hover { color: var(--lqBorder); }
+a, a:hover {
+  color: rgb(0, 0, 238);
+  color: var(--link);
+}
+.closebutton, .closebutton:hover {
+  color: rgb(192, 192, 127);
+  color: var(--lqBorder);
+}
 
 body {
+  color: black;
   color: var(--text);
+  background-color: white;
   background-color: var(--background);
 }
 
-th { background-color: var(--speaker); }
+th {
+  background-color: rgb(192, 192, 127);
+  background-color: var(--speaker);
+}
 
-table, table th, td { border-color: var(--border); }
-.highlighted th { background-color: var(--border); }
-.highlighted td { color: var(--accent); }
+table, table th, td {
+  border-color: rgb(127, 127, 63);
+  border-color: var(--border);
+}
+.highlighted th {
+  background-color: rgb(127, 127, 63);
+  background-color: var(--border);
+}
+.highlighted td {
+  color: rgb(63, 63, 31);
+  color: var(--accent);
+}
 
-.highlighted td, .js td:hover { background-color: var(--subtle); }
-th.directions { background-color: var(--background); }
+.highlighted td, .js td:hover {
+  background-color: rgb(255, 255, 237);
+  background-color: var(--subtle);
+}
+th.directions {
+  background-color: white;
+  background-color: var(--background);
+}
 
 @keyframes blur {
   from {
+    text-shadow: 0px 0px 0px black;
     text-shadow: 0px 0px 0px var(--text);
+    color: black;
     color: var(--text);
   } to {
+    text-shadow: 0px 0px 5px black;
     text-shadow: 0px 0px 5px var(--text);
     color: rgba(0, 0, 0, 0);
     }

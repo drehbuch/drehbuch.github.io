@@ -15,6 +15,9 @@ window.onload = function(){
   /* Signal to CSS that we have JS (for onclick hinting) */
   contentBox.classList.add('js')
   
+  /* Prevent searchbox reloading */
+  document.getElementById('searchbox').onsubmit = function(event){event.preventDefault(); return false;}
+  
   /* Gather index and assign onclicks */
   var rows = document.getElementsByTagName("tr")
   for( i = 0; i < rows.length; i++ ){

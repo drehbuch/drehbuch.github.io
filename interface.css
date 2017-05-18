@@ -19,6 +19,12 @@ body, th, td, note, a, h1, span {
   font-size: 1.1em;
 }
 
+/* Animations */
+
+@keyframes flashIn {
+  from { color: red }
+} #instructions ul { animation: flashIn 10s ease-in-out 0s forwards; }
+
 /* Quote */
 
 #largeQuote {

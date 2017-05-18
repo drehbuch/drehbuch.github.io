@@ -59,15 +59,12 @@
         <li>Click a speaker's name to highlight it throughout the script.</li>
         <li>Click the line to see the quote in full-screen.</li>
       </ul>
-      <input id='searchbar' autocomplete='off' type='text' placeholder="Find quote…"/>
-      <input type='button' value='Find' onclick='findQuote()'/>
-      
     </span>    
+    
     <noscript>
       <p>Your Javascript is disabled. Enable it for certain interface functions.</p>
     </noscript>
     
-    <h2>Table of Contents</h2>
     
     <div id="container">
       <div id='contents'>
@@ -83,6 +80,11 @@
           <a href="#section7">„Von einem, der rüber machte“</a> / 
           <a href="#section8">Die Wiederereinigung</a>
         </p>
+        <form id='searchbox' class='hidden'>
+          <input id='searchbar' autocomplete='off' type='text' placeholder="Find quote…"/>
+          <!-- We 'return false' to cancel any form sending shenanigans -->
+          <input type='submit' value='Find' onclick="findQuote(); return false;"/>
+        </form>
       </div>
     </div>
     

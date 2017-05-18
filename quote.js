@@ -85,11 +85,12 @@ function largeQuoteShow(/* td */) {
 
 function showSpeaker(/* th */){
   if( this.parentElement.classList.contains("highlighted") ){
-    quoteHighlight( function(line){
-      return line.speaker == this.innerText
-    })
-  } else {
     quoteHighlight()
+  } else {
+    var speaker = this.innerText;
+    quoteHighlight( function(line){
+      return line.speaker == speaker
+    })
   }
 }
 

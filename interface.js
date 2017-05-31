@@ -34,7 +34,7 @@ window.onload = function(){
 
 /* Basic style functionality */
 
-function changeTheme(themeIdentifier) {
+function changeTheme(theme) {
   var styler = document.getElementById('styler');
   styler.href = 'themes/' + theme + '.css';
 }

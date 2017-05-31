@@ -31,12 +31,12 @@ body, th, td, note, a, h1, span {
 
 @keyframes anderenline {
   0%   { width: 0%; }
-  100% { width: 100%; }
+  100% { width: 95%; }
 }
 #anderenline {
   display: inline-block;
   position: absolute;
-  left: 0;
+  left: 3px;
   top: 50%;
   width: 0%;
   border-top: 4px solid black;

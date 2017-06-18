@@ -77,6 +77,10 @@ body, th, td, note, a, h1, span {
   border-color: gray;
 }
 
+#content.blurred {
+  filter: blur(2px)
+}
+
 #background {
   position: absolute;
   top: 0;

@@ -64,18 +64,3 @@ th.directions {
   background-color: white;
   background-color: var(--background);
 }
-
-@keyframes blur {
-  from {
-    text-shadow: 0px 0px 0px black;
-    text-shadow: 0px 0px 0px var(--text);
-    color: black;
-    color: var(--text);
-  } to {
-    text-shadow: 0px 0px 5px black;
-    text-shadow: 0px 0px 5px var(--text);
-    color: rgba(0, 0, 0, 0);
-    }
-}
-
-.blurred { animation: blur 1s 0s ease-in-out normal forwards; }
